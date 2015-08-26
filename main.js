@@ -16,6 +16,8 @@ var currentPosition = null;
 var currentKana = null;
 var currentRomaji = null;
 
+var lastUsed = [];
+
 var lightsOn = true;
 
 $input.addEventListener('keydown', function (e) {
@@ -66,7 +68,14 @@ function refreshKana() {
 }
 
 function nextKana() {
-  currentPosition = Math.floor(Math.random() * currentCharacterSet.length);
+  do {
+    currentPosition = Math.floor(Math.random() * currentCharacterSet.length);
+  } while (lastUsed.indexOf(currentPosition) != -1);
+
+  lastUsed.push(currentPosition);
+  if (lastUsed.length > 10)
+    lastUsed.shift();
+
   refreshKana();
 }
 
