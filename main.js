@@ -102,7 +102,7 @@ $('#input').keyup(function (e) {
       $('#output').attr('class', 'failure');
 
     // Write the solution
-    $('#output').html(sensei.kana + ' is ' + sensei.romaji);
+    $('#output').html(sensei.kana + ' is <em>' + sensei.romaji + '</em>');
 
     // Clear the current animation and bring opacity to 1
     $('#output').clearQueue().stop().fadeTo(0, 1);
