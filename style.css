@@ -16,6 +16,15 @@ h1 {
   font-size: 8em;
 }
 
+#toolbar {
+  margin-bottom: 20px;
+  font-size: 1.6em;
+}
+
+#toolbar a {
+  text-decoration: none;
+}
+
 #symbol {
   font-size: 18em;
   margin: 0px;
@@ -49,15 +58,6 @@ h1 {
   margin-right: 5px;
   content: "✘";
   font-size: 1.2em;
-}
-
-#toolbar {
-  margin-bottom: 20px;
-  font-size: 1.6em;
-}
-
-#toolbar a {
-  text-decoration: none;
 }
 
 #about {
