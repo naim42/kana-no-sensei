@@ -1,73 +1,270 @@
-var $kana = document.querySelector('#kana');
-var $input = document.querySelector('#input');
-var $note = document.querySelector('#note');
-var $switchHiraKata = document.querySelector('#switchHiraKata');
-var $showTable = document.querySelector('#showTable');
-var $about = document.querySelector('#about');
-var $switchLights = document.querySelector('#switchLights');
+'use strict';
 
-var hiragana = [ { 'あ': 'a' }, { 'い': 'i' }, { 'う': 'u' }, { 'え': 'e' }, { 'お': 'o' }, { 'か': 'ka' }, { 'き': 'ki' }, { 'く': 'ku' }, { 'け': 'ke' }, { 'こ': 'ko' }, { 'さ': 'sa' }, { 'し': 'shi' }, { 'す': 'su' }, { 'せ': 'se' }, { 'そ': 'so' }, { 'た': 'ta' }, { 'ち': 'chi' }, { 'つ': 'tsu' }, { 'て': 'te' }, { 'と': 'to' }, { 'な': 'na' }, { 'に': 'ni' }, { 'ぬ': 'nu' }, { 'ね': 'ne' }, { 'の': 'no' }, { 'は': 'ha' }, { 'ひ': 'hi' }, { 'ふ': 'fu' }, { 'へ': 'he' }, { 'ほ': 'ho' }, { 'ま': 'ma' }, { 'み': 'mi' }, { 'む': 'mu' }, { 'め': 'me' }, { 'も': 'mo' }, { 'や': 'ya' }, { 'ゆ': 'yu' }, { 'よ': 'yo' }, { 'ら': 'ra' }, { 'り': 'ri' }, { 'る': 'ru' }, { 'れ': 're' }, { 'ろ': 'ro' }, { 'わ': 'wa' }, { 'を': 'wo' }, { 'ん': 'n' } ];
-var katakana = [ { 'ア': 'a' }, { 'イ': 'i' }, { 'ウ': 'u' }, { 'エ': 'e' }, { 'オ': 'o' }, { 'カ': 'ka' }, { 'キ': 'ki' }, { 'ク': 'ku' }, { 'ケ': 'ke' }, { 'コ': 'ko' }, { 'サ': 'sa' }, { 'シ': 'shi' }, { 'ス': 'su' }, { 'セ': 'se' }, { 'ソ': 'so' }, { 'タ': 'ta' }, { 'チ': 'chi' }, { 'ツ': 'tsu' }, { 'テ': 'te' }, { 'ト': 'to' }, { 'ナ': 'na' }, { 'ニ': 'ni' }, { 'ヌ': 'nu' }, { 'ネ': 'ne' }, { 'ノ': 'no' }, { 'ハ': 'ha' }, { 'ヒ': 'hi' }, { 'フ': 'fu' }, { 'ヘ': 'he' }, { 'ホ': 'ho' }, { 'マ': 'ma' }, { 'ミ': 'mi' }, { 'ム': 'mu' }, { 'メ': 'me' }, { 'モ': 'mo' }, { 'ヤ': 'ya' }, { 'ユ': 'yu' }, { 'ヨ': 'yo' }, { 'ラ': 'ra' }, { 'リ': 'ri' }, { 'ル': 'ru' }, { 'レ': 're' }, { 'ロ': 'ro' }, { 'ワ': 'wa' }, { 'ヲ': 'wo' }, { 'ン': 'n' } ];
+//
+// UI object
+//
 
-var usingHiragana = true;
-var currentCharacterSet = hiragana;
-
-var currentPosition = null;
-var currentKana = null;
-var currentRomaji = null;
-
-var lightsOn = true;
-
-$input.addEventListener('keydown', function (e) {
-  if (e.keyCode == 13) {
-    if ($input.value.toLowerCase() == currentRomaji) {
-      $note.innerHTML = 'Right!';
-      $note.style.color = '#2B8';
+var ui = {
+  body:        document.body,
+  ribbonDark:  $('#ribbonDark'),
+  ribbonLight: $('#ribbonLight'),
+  hiragana:    $('#hiragana'),
+  dakuten:     $('#dakuten'),
+  youon:       $('#youon'),
+  score:       $('#score'),
+  rights:      $('#rights'),
+  total:       $('#total'),
+  wtf:         $('#wtf'),
+  day:         $('#day'),
+  symbol:      $('#symbol'),
+  input:       $('#input'),
+  output:      $('#output'),
+  about:       $('#about'),
+  update: function () {
+    // Hiragana/katakana
+    if (JSON.parse(localStorage.hiragana) == true) {
+      this.hiragana.firstChild.style.display = '';
+      this.hiragana.lastChild.style.display  = 'none';
     } else {
-      $note.innerHTML = 'Wrong! ' + currentKana + ' is ' + currentRomaji + ' ...';
-      $note.style.color = '#B25';
+      this.hiragana.firstChild.style.display = 'none';
+      this.hiragana.lastChild.style.display  = '';
     }
 
-    $input.value = '';
-    nextKana();
+    // Dakuten
+    if (JSON.parse(localStorage.dakuten) == true) {
+      this.dakuten.style.textDecoration = 'none';
+    } else {
+      this.dakuten.style.textDecoration = 'line-through';
+    }
+
+    // Yoon
+    if (JSON.parse(localStorage.youon) == true) {
+      this.youon.style.textDecoration = 'none';
+    } else {
+      this.youon.style.textDecoration = 'line-through';
+    }
+
+    // Score
+    this.rights.innerHTML = JSON.parse(localStorage.rights);
+    this.total.innerHTML  = JSON.parse(localStorage.total);
+
+    // Day/night
+    if (JSON.parse(localStorage.day) == true) {
+      this.body.style.backgroundColor = 'white';
+      this.body.style.color           = 'black';
+
+      this.ribbonDark.style.display  = '';
+      this.ribbonLight.style.display = 'none';
+
+      this.day.firstChild.style.display = '';
+      this.day.lastChild.style.display  = 'none';
+    } else {
+      this.body.style.backgroundColor = 'black';
+      this.body.style.color           = 'white';
+
+      this.ribbonLight.style.display = '';
+      this.ribbonDark.style.display  = 'none';
+
+      this.day.firstChild.style.display = 'none';
+      this.day.lastChild.style.display  = '';
+    }
+  }
+};
+
+//
+// Kana object
+//
+
+var kana = {
+  characters: {},
+  subset: {},
+  symbol: '',
+  info: {},
+  lastUsed: [],
+  updateSubset: function () {
+    this.subset = {};
+
+    for (var i in this.characters) {
+      // If the character set doesn't match
+      if (this.characters[i].hiragana != JSON.parse(localStorage.hiragana))
+        continue;
+
+      // If unwanted dakuten
+      if (JSON.parse(localStorage.dakuten) == false && this.characters[i].dakuten == true)
+        continue;
+
+      // If unwanted youon
+      if (JSON.parse(localStorage.youon) == false && this.characters[i].youon == true)
+        continue;
+
+      // Add to subset
+      this.subset[i] = this.characters[i];
+    }
+  },
+  next: function () {
+    // Update the subset first
+    this.updateSubset();
+
+    // Retrieve all kanas
+    var symbols = Object.keys(this.subset);
+
+    do {
+      // Pick a random kana
+      this.symbol = symbols[Math.floor(Math.random() * symbols.length)];
+    } while (this.lastUsed.indexOf(this.symbol) != -1); // Musn't have been used recently
+
+    // Store the kana's information
+    this.info = this.subset[this.symbol];
+
+    // Store in the last used list
+    this.lastUsed.push(this.symbol);
+
+    // Cap the last used list
+    if (this.lastUsed.length > 15)
+      this.lastUsed.shift();
+
+    // Display the kana
+    ui.symbol.innerHTML = this.symbol;
+  }
+};
+
+//
+// Event listeners
+//
+
+// On submit
+ui.input.on('keydown', function (e) {
+  if (e.keyCode == 13) {
+
+    if (ui.input.value.toLowerCase().trim() == kana.info.romaji) {
+      ui.output.className = 'success';
+      localStorage.rights++;
+    } else {
+      ui.output.className = 'failure';
+    }
+    ui.output.innerHTML = kana.symbol + ' is ' + kana.info.romaji;
+
+    // Fade the output away after some time
+    clearTimeout(ui.output.timeout);
+    ui.output.classList.remove('hidden');
+    ui.output.timeout = setTimeout(function () {
+      ui.output.classList.add('hidden');
+    }, 3000);
+
+    // Clear the input
+    ui.input.value = '';
+
+    // Update the counter
+    localStorage.total++;
+
+    // Update the UI
+    ui.update();
+
+    // Next kana!
+    kana.next();
   }
 });
 
-$switchHiraKata.addEventListener('click', function (e) {
-  usingHiragana = !usingHiragana;
-  currentCharacterSet = usingHiragana ? hiragana : katakana;
+ui.hiragana.on('click', function (e) {
+  if (JSON.parse(localStorage.hiragana) == true)
+    localStorage.hiragana = false;
+  else
+    localStorage.hiragana = true;
 
-  $switchHiraKata.innerHTML = usingHiragana ? 'カタカナ' : 'ひらがな';
-  refreshKana();
+  // Update the UI
+  ui.update();
+
+  // Next kana!
+  kana.next();
 
   e.preventDefault();
 });
 
-$switchLights.addEventListener('click', function (e) {
-  lightsOn = !lightsOn;
+ui.dakuten.on('click', function (e) {
+  if (JSON.parse(localStorage.dakuten) == true)
+    localStorage.dakuten = false;
+  else
+    localStorage.dakuten = true;
 
-  document.body.style.backgroundColor = lightsOn ? 'white' : 'black';
-  document.body.style.color = lightsOn ? 'black' : 'white';
+  // Update the UI
+  ui.update();
 
-  $switchLights.innerHTML = lightsOn ? '●' : '○';
+  // Next kana!
+  kana.next();
 
   e.preventDefault();
 });
 
-function refreshKana() {
-  var kana = currentCharacterSet[currentPosition];
+ui.youon.on('click', function (e) {
+  if (JSON.parse(localStorage.youon) == true)
+    localStorage.youon = false;
+  else
+    localStorage.youon = true;
 
-  for (var key in kana) {
-    currentKana = key;
-    currentRomaji = kana[key];
+  // Update the UI
+  ui.update();
+
+  // Next kana!
+  kana.next();
+
+  e.preventDefault();
+});
+
+ui.score.on('click', function (e) {
+  localStorage.rights = 0;
+  localStorage.total  = 0;
+
+  // Update the UI
+  ui.update();
+
+  e.preventDefault();
+});
+
+ui.wtf.on('click', function (e) {
+  // Hide or show the about paragraph
+  ui.about.classList.toggle('hidden');
+
+  e.preventDefault();
+});
+
+ui.day.on('click', function (e) {
+  if (JSON.parse(localStorage.day) == true)
+    localStorage.day = false;
+  else
+    localStorage.day = true;
+
+  // Update the UI
+  ui.update();
+
+  e.preventDefault();
+});
+
+//
+// Initialization
+//
+
+// Fill local storage with default values
+localStorage.hiragana = localStorage.hiragana || true;
+localStorage.dakuten  = localStorage.dakuten  || false;
+localStorage.youon    = localStorage.youon    || false;
+localStorage.day      = localStorage.day      || true;
+localStorage.rights   = localStorage.rights   || 0;
+localStorage.total    = localStorage.total    || 0;
+
+// Update the UI
+ui.update();
+
+// Retreive the kana object from file
+var req = new XMLHttpRequest();
+req.open('GET', 'kana.json', true);
+req.send(null);
+
+req.onreadystatechange = function () {
+  if (req.readyState == 4 && req.status == 200) {
+    // Load characters into the object
+    kana.characters = JSON.parse(req.responseText);
+
+    // Yeeha!
+    kana.next();
   }
-
-  $kana.innerHTML = currentKana;
-}
-
-function nextKana() {
-  currentPosition = Math.floor(Math.random() * currentCharacterSet.length);
-  refreshKana();
-}
-
-nextKana();
+};
