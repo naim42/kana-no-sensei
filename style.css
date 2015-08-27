@@ -1,7 +1,25 @@
+@font-face {
+  font-family: "Raleway";
+  font-weight: normal;
+  src: url("font/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: bold;
+  src: url("font/Raleway-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Noto Sans CJK JP";
+  font-weight: normal;
+  src: url("font/NotoSansCJKjp-Regular.otf");
+}
+
 body {
   padding: 20px;
   text-align: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", "Noto Sans CJK JP", sans-serif;
 }
 
 a {
@@ -25,16 +43,18 @@ h1 {
 
 #kana {
   margin: 0px;
-  font-size: 20em;
+  font-size: 22em;
+  line-height: 1.2em;
 }
 
 #output {
   height: 20px;
+  font-size: 1.4em;
   font-weight: bold;
 }
 
 #output.success {
-  color: #2B7;
+  color: #3D9;
 }
 
 #output.success::before {
@@ -58,17 +78,20 @@ h1 {
   font-size: 1.2em;
 }
 
-.left, .right {
+.translation {
+  font-size: 0.8em;
+}
+
+.translation span {
   display: inline-block;
   width: 12em;
-  font-size: 0.8em;
   vertical-align: middle;
 }
 
-.left {
+.translation span.left {
   text-align: right;
 }
 
-.right {
+.translation span.right {
   text-align: left;
 }
