@@ -2,23 +2,66 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Kana no sensei</title>
-    <link rel="stylesheet" href="main.css">
+    <title>仮名の先生</title>
+    <link rel='icon' href='favicon.png'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Raleway:400,700'>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <a href="https://github.com/naim42">
+      <img id="ribbonDark" style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+      <img id="ribbonLight" style="position: absolute; top: 0; right: 0; border: 0; display: none;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+    </a>
     <h1>仮名の先生</h1>
-    <p id="kana"></p>
-    <p><input id="input" type="text" placeholder="Ex.: ka, n, ji" autofocus></p>
-    <p id="note">&nbsp;</p>
-    <p id="links">
-      <a id="switchHiraKata" href="#">カタカナ</a>
+    <p id="toolbar">
+      <a id="hiragana" href="#"><span>ひらがな</span><span style="display: none;">カタカナ</span></a>
       •
-      <a id="showTable" href="#">Show table</a>
+      <a id="dakuten" href="#">濁点</a>
       •
-      <a id="about" href="#">About</a>
+      <a id="youon" href="#">拗音</a>
       •
-      <a id="switchLights" href="#">●</a>
+      <a id="score" href="#"><span id="rights">0</span>/<span id="total">0</span></a>
+      •
+      <a id="wtf" href="#">wtf !?</a>
+      •
+      <a id="day" href="#"><span>日</span><span style="display: none;">夜</span></a>
     </p>
+    <p id="symbol"></p>
+    <p><input id="input" type="text" placeholder="Ex.: ka, n, ji" autofocus></p>
+    <p id="output">&nbsp;</p>
+    <div id="about" class="hidden">
+      <p>
+        Hi there!<br><br>
+        I'm a French teenager who likes to study the japanese language on his free time.<br>
+        I developed this tool to help me learn <strong>hiragana</strong> and <strong>katakana</strong> (the two main japanese alphabets).<br>
+        It's very simple, just type the <strong>romaji</strong> transliteration for the kana(s) you see.<br>
+        You can choose to show hiragana or katakana, diacritics and digraphs.<br>
+        The source code for this project is available on <a href="https://github.com/naim42/kana-no-sensei">GitHub</a> under the MIT License.
+      </p>
+      <p>
+        <span class="left">仮名の先生</span> = <span class="right">kana no sensei<br><em>Kana Teacher</em></span>
+      </p>
+      <p>
+        <span class="left">ひらがな</span> = <span class="right">hiragana<br><em>hiragana</em></span>
+      </p>
+      <p>
+        <span class="left">カタカナ</span> = <span class="right">katakana<br><em>katakana</em></span>
+      </p>
+      <p>
+        <span class="left">濁点</span> = <span class="right">dakuten<br><em>voicing mark</em></span>
+      </p>
+      <p>
+        <span class="left">拗音</span> = <span class="right">youon<br><em>diphthong</em></span>
+      </p>
+      <p>
+        <span class="left">日</span> = <span class="right">hi<br><em>day</em></span>
+      </p>
+      <p>
+        <span class="left">夜</span> = <span class="right">yoru<br><em>night</em></span>
+      </p>
+      <p>❤</p>
+    </div>
+    <script src="bling.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

@@ -1,0 +1,1250 @@
+{
+  "あ": {
+    "romaji": "a",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "い": {
+    "romaji": "i",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "う": {
+    "romaji": "u",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "え": {
+    "romaji": "e",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "お": {
+    "romaji": "o",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "か": {
+    "romaji": "ka",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "き": {
+    "romaji": "ki",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "く": {
+    "romaji": "ku",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "け": {
+    "romaji": "ke",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "こ": {
+    "romaji": "ko",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "さ": {
+    "romaji": "sa",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "し": {
+    "romaji": "shi",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "す": {
+    "romaji": "su",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "せ": {
+    "romaji": "se",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "そ": {
+    "romaji": "so",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "た": {
+    "romaji": "ta",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "ち": {
+    "romaji": "chi",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "つ": {
+    "romaji": "tsu",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "て": {
+    "romaji": "te",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "と": {
+    "romaji": "to",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "な": {
+    "romaji": "na",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "に": {
+    "romaji": "ni",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "ぬ": {
+    "romaji": "nu",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "ね": {
+    "romaji": "ne",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "の": {
+    "romaji": "no",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "は": {
+    "romaji": "ha",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "ひ": {
+    "romaji": "hi",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "ふ": {
+    "romaji": "fu",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "へ": {
+    "romaji": "he",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "ほ": {
+    "romaji": "ho",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "ま": {
+    "romaji": "ma",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "み": {
+    "romaji": "mi",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "む": {
+    "romaji": "mu",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "め": {
+    "romaji": "me",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "も": {
+    "romaji": "mo",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "や": {
+    "romaji": "ya",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "ゆ": {
+    "romaji": "yu",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "よ": {
+    "romaji": "yo",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "ら": {
+    "romaji": "ra",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "り": {
+    "romaji": "ri",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "る": {
+    "romaji": "ru",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "れ": {
+    "romaji": "re",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "ろ": {
+    "romaji": "ro",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "わ": {
+    "romaji": "wa",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "を": {
+    "romaji": "wo",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "ん": {
+    "romaji": "n",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": false
+  },
+  "が": {
+    "romaji": "ga",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ぎ": {
+    "romaji": "gi",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ぐ": {
+    "romaji": "gu",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "げ": {
+    "romaji": "ge",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ご": {
+    "romaji": "go",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ざ": {
+    "romaji": "za",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "じ": {
+    "romaji": "ji",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ず": {
+    "romaji": "zu",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ぜ": {
+    "romaji": "ze",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ぞ": {
+    "romaji": "zo",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "だ": {
+    "romaji": "da",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ぢ": {
+    "romaji": "ji",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "づ": {
+    "romaji": "zu",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "で": {
+    "romaji": "de",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ど": {
+    "romaji": "do",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ば": {
+    "romaji": "ba",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "び": {
+    "romaji": "bi",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ぶ": {
+    "romaji": "bu",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "べ": {
+    "romaji": "be",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ぼ": {
+    "romaji": "bo",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ぱ": {
+    "romaji": "pa",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ぴ": {
+    "romaji": "pi",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ぷ": {
+    "romaji": "pu",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ぺ": {
+    "romaji": "pe",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "ぽ": {
+    "romaji": "po",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": false
+  },
+  "きゃ": {
+    "romaji": "kya",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "きゅ": {
+    "romaji": "kyu",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "きょ": {
+    "romaji": "kyo",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "しゃ": {
+    "romaji": "sha",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "しゅ": {
+    "romaji": "shu",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "しょ": {
+    "romaji": "sho",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "ちゃ": {
+    "romaji": "cha",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "ちゅ": {
+    "romaji": "chu",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "ちょ": {
+    "romaji": "cho",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "にゃ": {
+    "romaji": "nya",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "にゅ": {
+    "romaji": "nyu",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "にょ": {
+    "romaji": "nyo",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "ひゃ": {
+    "romaji": "hya",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "ひゅ": {
+    "romaji": "hyu",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "ひょ": {
+    "romaji": "hyo",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "みゃ": {
+    "romaji": "mya",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "みゅ": {
+    "romaji": "myu",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "みょ": {
+    "romaji": "myo",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "りゃ": {
+    "romaji": "rya",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "りゅ": {
+    "romaji": "ryu",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "りょ": {
+    "romaji": "ryo",
+    "hiragana": true,
+    "dakuten": false,
+    "youon": true
+  },
+  "ぎゃ": {
+    "romaji": "gya",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": true
+  },
+  "ぎゅ": {
+    "romaji": "gyu",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": true
+  },
+  "ぎょ": {
+    "romaji": "gyo",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": true
+  },
+  "じゃ": {
+    "romaji": "ja",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": true
+  },
+  "じゅ": {
+    "romaji": "ju",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": true
+  },
+  "じょ": {
+    "romaji": "jo",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": true
+  },
+  "びゃ": {
+    "romaji": "bya",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": true
+  },
+  "びゅ": {
+    "romaji": "byu",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": true
+  },
+  "びょ": {
+    "romaji": "byo",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": true
+  },
+  "ぴゃ": {
+    "romaji": "pya",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": true
+  },
+  "ぴゅ": {
+    "romaji": "pyu",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": true
+  },
+  "ぴょ": {
+    "romaji": "pyo",
+    "hiragana": true,
+    "dakuten": true,
+    "youon": true
+  },
+  "ア": {
+    "romaji": "a",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "イ": {
+    "romaji": "i",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ウ": {
+    "romaji": "u",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "エ": {
+    "romaji": "e",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "オ": {
+    "romaji": "o",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "カ": {
+    "romaji": "ka",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "キ": {
+    "romaji": "ki",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ク": {
+    "romaji": "ku",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ケ": {
+    "romaji": "ke",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "コ": {
+    "romaji": "ko",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "サ": {
+    "romaji": "sa",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "シ": {
+    "romaji": "shi",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ス": {
+    "romaji": "su",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "セ": {
+    "romaji": "se",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ソ": {
+    "romaji": "so",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "タ": {
+    "romaji": "ta",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "チ": {
+    "romaji": "chi",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ツ": {
+    "romaji": "tsu",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "テ": {
+    "romaji": "te",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ト": {
+    "romaji": "to",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ナ": {
+    "romaji": "na",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ニ": {
+    "romaji": "ni",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ヌ": {
+    "romaji": "nu",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ネ": {
+    "romaji": "ne",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ノ": {
+    "romaji": "no",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ハ": {
+    "romaji": "ha",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ヒ": {
+    "romaji": "hi",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "フ": {
+    "romaji": "fu",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ヘ": {
+    "romaji": "he",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ホ": {
+    "romaji": "ho",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "マ": {
+    "romaji": "ma",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ミ": {
+    "romaji": "mi",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ム": {
+    "romaji": "mu",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "メ": {
+    "romaji": "me",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "モ": {
+    "romaji": "mo",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ヤ": {
+    "romaji": "ya",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ユ": {
+    "romaji": "yu",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ヨ": {
+    "romaji": "yo",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ラ": {
+    "romaji": "ra",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "リ": {
+    "romaji": "ri",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ル": {
+    "romaji": "ru",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "レ": {
+    "romaji": "re",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ロ": {
+    "romaji": "ro",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ワ": {
+    "romaji": "wa",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ヲ": {
+    "romaji": "wo",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ン": {
+    "romaji": "n",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": false
+  },
+  "ガ": {
+    "romaji": "ga",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ギ": {
+    "romaji": "gi",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "グ": {
+    "romaji": "gu",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ゲ": {
+    "romaji": "ge",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ゴ": {
+    "romaji": "go",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ザ": {
+    "romaji": "za",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ジ": {
+    "romaji": "ji",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ズ": {
+    "romaji": "zu",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ゼ": {
+    "romaji": "ze",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ゾ": {
+    "romaji": "zo",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ダ": {
+    "romaji": "da",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ヂ": {
+    "romaji": "ji",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ヅ": {
+    "romaji": "zu",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "デ": {
+    "romaji": "de",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ド": {
+    "romaji": "do",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "バ": {
+    "romaji": "ba",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ビ": {
+    "romaji": "bi",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ブ": {
+    "romaji": "bu",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ベ": {
+    "romaji": "be",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ボ": {
+    "romaji": "bo",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "パ": {
+    "romaji": "pa",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ピ": {
+    "romaji": "pi",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "プ": {
+    "romaji": "pu",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ペ": {
+    "romaji": "pe",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "ポ": {
+    "romaji": "po",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": false
+  },
+  "キャ": {
+    "romaji": "kya",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "キュ": {
+    "romaji": "kyu",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "キョ": {
+    "romaji": "kyo",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "シャ": {
+    "romaji": "sha",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "シュ": {
+    "romaji": "shu",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "ショ": {
+    "romaji": "sho",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "チャ": {
+    "romaji": "cha",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "チュ": {
+    "romaji": "chu",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "チョ": {
+    "romaji": "cho",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "ニャ": {
+    "romaji": "nya",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "ニュ": {
+    "romaji": "nyu",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "ニョ": {
+    "romaji": "nyo",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "ヒャ": {
+    "romaji": "hya",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "ヒュ": {
+    "romaji": "hyu",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "ヒョ": {
+    "romaji": "hyo",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "ミャ": {
+    "romaji": "mya",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "ミュ": {
+    "romaji": "myu",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "ミョ": {
+    "romaji": "myo",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "リャ": {
+    "romaji": "rya",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "リュ": {
+    "romaji": "ryu",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "リョ": {
+    "romaji": "ryo",
+    "hiragana": false,
+    "dakuten": false,
+    "youon": true
+  },
+  "ギャ": {
+    "romaji": "gya",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": true
+  },
+  "ギュ": {
+    "romaji": "gyu",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": true
+  },
+  "ギョ": {
+    "romaji": "gyo",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": true
+  },
+  "ジャ": {
+    "romaji": "ja",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": true
+  },
+  "ジュ": {
+    "romaji": "ju",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": true
+  },
+  "ジョ": {
+    "romaji": "jo",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": true
+  },
+  "ビャ": {
+    "romaji": "bya",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": true
+  },
+  "ビュ": {
+    "romaji": "byu",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": true
+  },
+  "ビョ": {
+    "romaji": "byo",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": true
+  },
+  "ピャ": {
+    "romaji": "pya",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": true
+  },
+  "ピュ": {
+    "romaji": "pyu",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": true
+  },
+  "ピョ": {
+    "romaji": "pyo",
+    "hiragana": false,
+    "dakuten": true,
+    "youon": true
+  }
+}

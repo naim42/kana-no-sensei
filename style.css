@@ -1,0 +1,88 @@
+body {
+  padding: 20px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-size: 8em;
+}
+
+#symbol {
+  font-size: 18em;
+  margin: 0px;
+}
+
+#output {
+  font-weight: bold;
+  transition: opacity 0s;
+}
+
+#output.hidden {
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+#output.success {
+  color: #2B7;
+}
+
+#output.success::before {
+  margin-right: 5px;
+  content: "✔";
+  font-size: 1.2em;
+}
+
+#output.failure {
+  color: #E26;
+}
+
+#output.failure::before {
+  margin-right: 5px;
+  content: "✘";
+  font-size: 1.2em;
+}
+
+#toolbar {
+  margin-bottom: 20px;
+  font-size: 1.6em;
+}
+
+#toolbar a {
+  text-decoration: none;
+}
+
+#about {
+  margin-top: 20px;
+  overflow: hidden;
+  transition: opacity 0.4s;
+  font-size: 1.2em;
+}
+
+#about.hidden {
+  height: 0px;
+  opacity: 0;
+}
+
+.left, .right {
+  display: inline-block;
+  width: 12em;
+  font-size: 0.8em;
+  vertical-align: middle;
+}
+
+.left {
+  text-align: right;
+}
+
+.right {
+  text-align: left;
+}
