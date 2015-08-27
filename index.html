@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>仮名の先生</title>
@@ -8,34 +8,42 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <a href="https://github.com/naim42">
-      <img id="ribbonDark" style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
-      <img id="ribbonLight" style="position: absolute; top: 0; right: 0; border: 0; display: none;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+    <a id="ribbon" href="https://github.com/naim42">
+      <img class="light" style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+      <img class="dark" style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
     </a>
-    <h1>仮名の先生</h1>
+    <h1 title="Kana no sensei">仮名の先生</h1>
     <p id="toolbar">
-      <a id="hiragana" href="#"><span>ひらがな</span><span style="display: none;">カタカナ</span></a>
+      <a id="system" href="#">
+        <span class="hiragana" title="Hiragana">ひらがな</span>
+        <span class="katakana" title="Katakana">カタカナ</span>
+      </a>
       •
-      <a id="dakuten" href="#">濁点</a>
+      <a id="modifiers" href="#">
+        <span class="hiragana none" title="Simple">し</span>
+        <span class="hiragana dakuten" title="With dakuten">じ</span>
+        <span class="hiragana youon" title="With dakuten and youon">じゅ</span>
+        <span class="katakana none" title="Simple">シ</span>
+        <span class="katakana dakuten" title="With dakuten">ジ</span>
+        <span class="katakana youon" title="With dakuten and youon">ジュ</span>
+      </a>
       •
-      <a id="youon" href="#">拗音</a>
+      <a id="theme" href="#">
+        <span class="light" title="Day">日</span>
+        <span class="dark" title="Night">夜</span>
+      </a>
       •
-      <a id="score" href="#"><span id="rights">0</span>/<span id="total">0</span></a>
-      •
-      <a id="wtf" href="#">wtf !?</a>
-      •
-      <a id="day" href="#"><span>日</span><span style="display: none;">夜</span></a>
+      <a id="wtf" href="#" title="About">wtf !?</a>
     </p>
-    <p id="symbol"></p>
+    <p id="kana"></p>
     <p><input id="input" type="text" placeholder="Ex.: ka, n, ji" autofocus></p>
-    <p id="output">&nbsp;</p>
-    <div id="about" class="hidden">
+    <p id="output"></p>
+    <div id="about" style="display: none;">
       <p>
         Hi there!<br><br>
         I'm a French teenager who likes to study the japanese language on his free time.<br>
         I developed this tool to help me learn <strong>hiragana</strong> and <strong>katakana</strong> (the two main japanese alphabets).<br>
-        It's very simple, just type the <strong>romaji</strong> transliteration for the kana(s) you see.<br>
-        You can choose to show hiragana or katakana, diacritics and digraphs.<br>
+        You can choose to train on hiragana or katakana, diacritics and digraphs.<br>
         The source code for this project is available on <a href="https://github.com/naim42/kana-no-sensei">GitHub</a>.
       </p>
       <p>
@@ -48,12 +56,6 @@
         <span class="left">カタカナ</span> = <span class="right">katakana<br><em>katakana</em></span>
       </p>
       <p>
-        <span class="left">濁点</span> = <span class="right">dakuten<br><em>voicing mark</em></span>
-      </p>
-      <p>
-        <span class="left">拗音</span> = <span class="right">youon<br><em>diphthong</em></span>
-      </p>
-      <p>
         <span class="left">日</span> = <span class="right">hi<br><em>day</em></span>
       </p>
       <p>
@@ -61,7 +63,7 @@
       </p>
       <p>❤</p>
     </div>
-    <script src="bling.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

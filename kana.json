@@ -1,1250 +1,1042 @@
 {
   "あ": {
     "romaji": "a",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "い": {
     "romaji": "i",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "う": {
     "romaji": "u",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "え": {
     "romaji": "e",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "お": {
     "romaji": "o",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "か": {
     "romaji": "ka",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "き": {
     "romaji": "ki",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "く": {
     "romaji": "ku",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "け": {
     "romaji": "ke",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "こ": {
     "romaji": "ko",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "さ": {
     "romaji": "sa",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "し": {
     "romaji": "shi",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "す": {
     "romaji": "su",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "せ": {
     "romaji": "se",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "そ": {
     "romaji": "so",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "た": {
     "romaji": "ta",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "ち": {
     "romaji": "chi",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "つ": {
     "romaji": "tsu",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "て": {
     "romaji": "te",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "と": {
     "romaji": "to",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "な": {
     "romaji": "na",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "に": {
     "romaji": "ni",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "ぬ": {
     "romaji": "nu",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "ね": {
     "romaji": "ne",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "の": {
     "romaji": "no",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "は": {
     "romaji": "ha",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "ひ": {
     "romaji": "hi",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "ふ": {
     "romaji": "fu",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "へ": {
     "romaji": "he",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "ほ": {
     "romaji": "ho",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "ま": {
     "romaji": "ma",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "み": {
     "romaji": "mi",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "む": {
     "romaji": "mu",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "め": {
     "romaji": "me",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "も": {
     "romaji": "mo",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "や": {
     "romaji": "ya",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "ゆ": {
     "romaji": "yu",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "よ": {
     "romaji": "yo",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "ら": {
     "romaji": "ra",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "り": {
     "romaji": "ri",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "る": {
     "romaji": "ru",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "れ": {
     "romaji": "re",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "ろ": {
     "romaji": "ro",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "わ": {
     "romaji": "wa",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "を": {
     "romaji": "wo",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "ん": {
     "romaji": "n",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "none"
   },
   "が": {
     "romaji": "ga",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ぎ": {
     "romaji": "gi",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ぐ": {
     "romaji": "gu",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "げ": {
     "romaji": "ge",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ご": {
     "romaji": "go",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ざ": {
     "romaji": "za",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "じ": {
     "romaji": "ji",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ず": {
     "romaji": "zu",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ぜ": {
     "romaji": "ze",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ぞ": {
     "romaji": "zo",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "だ": {
     "romaji": "da",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ぢ": {
     "romaji": "ji",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "づ": {
     "romaji": "zu",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "で": {
     "romaji": "de",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ど": {
     "romaji": "do",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ば": {
     "romaji": "ba",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "び": {
     "romaji": "bi",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ぶ": {
     "romaji": "bu",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "べ": {
     "romaji": "be",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ぼ": {
     "romaji": "bo",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ぱ": {
     "romaji": "pa",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ぴ": {
     "romaji": "pi",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ぷ": {
     "romaji": "pu",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ぺ": {
     "romaji": "pe",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "ぽ": {
     "romaji": "po",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": false
+    "system": "hiragana",
+    "modifiers": "dakuten"
   },
   "きゃ": {
     "romaji": "kya",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "きゅ": {
     "romaji": "kyu",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "きょ": {
     "romaji": "kyo",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "しゃ": {
     "romaji": "sha",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "しゅ": {
     "romaji": "shu",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "しょ": {
     "romaji": "sho",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ちゃ": {
     "romaji": "cha",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ちゅ": {
     "romaji": "chu",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ちょ": {
     "romaji": "cho",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "にゃ": {
     "romaji": "nya",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "にゅ": {
     "romaji": "nyu",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "にょ": {
     "romaji": "nyo",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ひゃ": {
     "romaji": "hya",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ひゅ": {
     "romaji": "hyu",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ひょ": {
     "romaji": "hyo",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "みゃ": {
     "romaji": "mya",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "みゅ": {
     "romaji": "myu",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "みょ": {
     "romaji": "myo",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "りゃ": {
     "romaji": "rya",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "りゅ": {
     "romaji": "ryu",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "りょ": {
     "romaji": "ryo",
-    "hiragana": true,
-    "dakuten": false,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ぎゃ": {
     "romaji": "gya",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ぎゅ": {
     "romaji": "gyu",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ぎょ": {
     "romaji": "gyo",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "じゃ": {
     "romaji": "ja",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "じゅ": {
     "romaji": "ju",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "じょ": {
     "romaji": "jo",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "びゃ": {
     "romaji": "bya",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "びゅ": {
     "romaji": "byu",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "びょ": {
     "romaji": "byo",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ぴゃ": {
     "romaji": "pya",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ぴゅ": {
     "romaji": "pyu",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ぴょ": {
     "romaji": "pyo",
-    "hiragana": true,
-    "dakuten": true,
-    "youon": true
+    "system": "hiragana",
+    "modifiers": "youon"
   },
   "ア": {
     "romaji": "a",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "イ": {
     "romaji": "i",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ウ": {
     "romaji": "u",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "エ": {
     "romaji": "e",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "オ": {
     "romaji": "o",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "カ": {
     "romaji": "ka",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "キ": {
     "romaji": "ki",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ク": {
     "romaji": "ku",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ケ": {
     "romaji": "ke",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "コ": {
     "romaji": "ko",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "サ": {
     "romaji": "sa",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "シ": {
     "romaji": "shi",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ス": {
     "romaji": "su",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "セ": {
     "romaji": "se",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ソ": {
     "romaji": "so",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "タ": {
     "romaji": "ta",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "チ": {
     "romaji": "chi",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ツ": {
     "romaji": "tsu",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "テ": {
     "romaji": "te",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ト": {
     "romaji": "to",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ナ": {
     "romaji": "na",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ニ": {
     "romaji": "ni",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ヌ": {
     "romaji": "nu",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ネ": {
     "romaji": "ne",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ノ": {
     "romaji": "no",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ハ": {
     "romaji": "ha",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ヒ": {
     "romaji": "hi",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "フ": {
     "romaji": "fu",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ヘ": {
     "romaji": "he",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ホ": {
     "romaji": "ho",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "マ": {
     "romaji": "ma",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ミ": {
     "romaji": "mi",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ム": {
     "romaji": "mu",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "メ": {
     "romaji": "me",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "モ": {
     "romaji": "mo",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ヤ": {
     "romaji": "ya",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ユ": {
     "romaji": "yu",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ヨ": {
     "romaji": "yo",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ラ": {
     "romaji": "ra",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "リ": {
     "romaji": "ri",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ル": {
     "romaji": "ru",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "レ": {
     "romaji": "re",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ロ": {
     "romaji": "ro",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ワ": {
     "romaji": "wa",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ヲ": {
     "romaji": "wo",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ン": {
     "romaji": "n",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "none"
   },
   "ガ": {
     "romaji": "ga",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ギ": {
     "romaji": "gi",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "グ": {
     "romaji": "gu",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ゲ": {
     "romaji": "ge",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ゴ": {
     "romaji": "go",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ザ": {
     "romaji": "za",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ジ": {
     "romaji": "ji",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ズ": {
     "romaji": "zu",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ゼ": {
     "romaji": "ze",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ゾ": {
     "romaji": "zo",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ダ": {
     "romaji": "da",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ヂ": {
     "romaji": "ji",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ヅ": {
     "romaji": "zu",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "デ": {
     "romaji": "de",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ド": {
     "romaji": "do",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "バ": {
     "romaji": "ba",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ビ": {
     "romaji": "bi",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ブ": {
     "romaji": "bu",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ベ": {
     "romaji": "be",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ボ": {
     "romaji": "bo",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "パ": {
     "romaji": "pa",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ピ": {
     "romaji": "pi",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "プ": {
     "romaji": "pu",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ペ": {
     "romaji": "pe",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "ポ": {
     "romaji": "po",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": false
+    "system": "katakana",
+    "modifiers": "dakuten"
   },
   "キャ": {
     "romaji": "kya",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "キュ": {
     "romaji": "kyu",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "キョ": {
     "romaji": "kyo",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "シャ": {
     "romaji": "sha",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "シュ": {
     "romaji": "shu",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ショ": {
     "romaji": "sho",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "チャ": {
     "romaji": "cha",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "チュ": {
     "romaji": "chu",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "チョ": {
     "romaji": "cho",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ニャ": {
     "romaji": "nya",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ニュ": {
     "romaji": "nyu",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ニョ": {
     "romaji": "nyo",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ヒャ": {
     "romaji": "hya",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ヒュ": {
     "romaji": "hyu",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ヒョ": {
     "romaji": "hyo",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ミャ": {
     "romaji": "mya",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ミュ": {
     "romaji": "myu",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ミョ": {
     "romaji": "myo",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "リャ": {
     "romaji": "rya",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "リュ": {
     "romaji": "ryu",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "リョ": {
     "romaji": "ryo",
-    "hiragana": false,
-    "dakuten": false,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ギャ": {
     "romaji": "gya",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ギュ": {
     "romaji": "gyu",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ギョ": {
     "romaji": "gyo",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ジャ": {
     "romaji": "ja",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ジュ": {
     "romaji": "ju",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ジョ": {
     "romaji": "jo",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ビャ": {
     "romaji": "bya",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ビュ": {
     "romaji": "byu",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ビョ": {
     "romaji": "byo",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ピャ": {
     "romaji": "pya",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ピュ": {
     "romaji": "pyu",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   },
   "ピョ": {
     "romaji": "pyo",
-    "hiragana": false,
-    "dakuten": true,
-    "youon": true
+    "system": "katakana",
+    "modifiers": "youon"
   }
 }
