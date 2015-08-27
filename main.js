@@ -1,240 +1,185 @@
-'use strict';
-
 //
-// UI object
+// Storage
 //
 
-var ui = {
-  body:        document.body,
-  ribbonDark:  $('#ribbonDark'),
-  ribbonLight: $('#ribbonLight'),
-  hiragana:    $('#hiragana'),
-  dakuten:     $('#dakuten'),
-  youon:       $('#youon'),
-  score:       $('#score'),
-  rights:      $('#rights'),
-  total:       $('#total'),
-  wtf:         $('#wtf'),
-  day:         $('#day'),
-  symbol:      $('#symbol'),
-  input:       $('#input'),
-  output:      $('#output'),
-  about:       $('#about'),
-  update: function () {
-    // Hiragana/katakana
-    if (JSON.parse(localStorage.hiragana) == true) {
-      this.hiragana.firstChild.style.display = '';
-      this.hiragana.lastChild.style.display  = 'none';
-    } else {
-      this.hiragana.firstChild.style.display = 'none';
-      this.hiragana.lastChild.style.display  = '';
-    }
+var lS = localStorage;
 
-    // Dakuten
-    if (JSON.parse(localStorage.dakuten) == true) {
-      this.dakuten.style.textDecoration = 'none';
-    } else {
-      this.dakuten.style.textDecoration = 'line-through';
-    }
+// Fill with default values
+lS.system    = lS.system    || 'hiragana';
+lS.modifiers = lS.modifiers || 'none';
+lS.theme     = lS.theme     || 'light';
 
-    // Yoon
-    if (JSON.parse(localStorage.youon) == true) {
-      this.youon.style.textDecoration = 'none';
-    } else {
-      this.youon.style.textDecoration = 'line-through';
-    }
+//
+// User interface
+//
 
-    // Score
-    this.rights.innerHTML = JSON.parse(localStorage.rights);
-    this.total.innerHTML  = JSON.parse(localStorage.total);
+$.update = function () {
+  // Hide everything
+  $('#system, #modifiers, #theme, #ribbon').children().hide();
 
-    // Day/night
-    if (JSON.parse(localStorage.day) == true) {
-      this.body.style.backgroundColor = 'white';
-      this.body.style.color           = 'black';
+  // Show the writing system
+  $('#system .' + lS.system).show();
 
-      this.ribbonDark.style.display  = '';
-      this.ribbonLight.style.display = 'none';
+  // Show the modifiers
+  $('#modifiers .' + lS.system + '.' + lS.modifiers).show();
 
-      this.day.firstChild.style.display = '';
-      this.day.lastChild.style.display  = 'none';
-    } else {
-      this.body.style.backgroundColor = 'black';
-      this.body.style.color           = 'white';
+  // Show the theme kanji
+  $('#theme .' + lS.theme).show();
 
-      this.ribbonLight.style.display = '';
-      this.ribbonDark.style.display  = 'none';
+  // Show the right ribbon
+  $('#ribbon .' + lS.theme).show();
 
-      this.day.firstChild.style.display = 'none';
-      this.day.lastChild.style.display  = '';
-    }
-  }
+  // Update the colors
+  $('body').css('background-color', lS.theme == 'light' ? 'white' : 'black');
+  $('body').css('color',            lS.theme == 'light' ? 'black' : 'white');
 };
 
 //
-// Kana object
+// Main object
 //
 
-var kana = {
+var sensei = {
   characters: {},
   subset: {},
-  symbol: '',
-  info: {},
-  lastUsed: [],
+  kana: '',
+  romaji: '',
+  lastKanas: [],
   updateSubset: function () {
+    // Scope.
+    var that = this;
+
+    // Clear the subset
     this.subset = {};
 
-    for (var i in this.characters) {
-      // If the character set doesn't match
-      if (this.characters[i].hiragana != JSON.parse(localStorage.hiragana))
-        continue;
+    $.each(this.characters, function (key, character) {
+      // If the writing system doesn't match
+      if (character.system != lS.system)
+        return;
 
-      // If unwanted dakuten
-      if (JSON.parse(localStorage.dakuten) == false && this.characters[i].dakuten == true)
-        continue;
-
-      // If unwanted youon
-      if (JSON.parse(localStorage.youon) == false && this.characters[i].youon == true)
-        continue;
+      // Unwanted modifier
+      var order = ['none', 'dakuten', 'youon'];
+      if (order.indexOf(character.modifiers) > order.indexOf(lS.modifiers))
+        return;
 
       // Add to subset
-      this.subset[i] = this.characters[i];
-    }
+      that.subset[key] = character;
+    });
   },
   next: function () {
-    // Update the subset first
-    this.updateSubset();
-
     // Retrieve all kanas
-    var symbols = Object.keys(this.subset);
+    var kanas = Object.keys(this.subset);
 
     do {
-      // Pick a random kana
-      this.symbol = symbols[Math.floor(Math.random() * symbols.length)];
-    } while (this.lastUsed.indexOf(this.symbol) != -1); // Musn't have been used recently
+      this.kana = kanas[Math.floor(Math.random() * kanas.length)]; // Pick a random kana
+    } while (this.lastKanas.indexOf(this.kana) != -1); // That hasn't been used recently
 
-    // Store the kana's information
-    this.info = this.subset[this.symbol];
+    // Store the kana's romaji
+    this.romaji = this.subset[this.kana].romaji;
 
     // Store in the last used list
-    this.lastUsed.push(this.symbol);
+    this.lastKanas.push(this.kana);
 
     // Cap the last used list
-    if (this.lastUsed.length > 15)
-      this.lastUsed.shift();
+    if (this.lastKanas.length > 15)
+      this.lastKanas.shift();
 
     // Display the kana
-    ui.symbol.innerHTML = this.symbol;
+    $('#kana').html(this.kana);
   }
 };
 
 //
-// Event listeners
+// Events
 //
 
 // On submit
-ui.input.on('keydown', function (e) {
+$('#input').keyup(function (e) {
   if (e.keyCode == 13) {
+    // Set the success/failure class
+    if ($('#input').val().toLowerCase().trim() == sensei.romaji)
+      $('#output').attr('class', 'success');
+    else
+      $('#output').attr('class', 'failure');
 
-    if (ui.input.value.toLowerCase().trim() == kana.info.romaji) {
-      ui.output.className = 'success';
-      localStorage.rights++;
-    } else {
-      ui.output.className = 'failure';
-    }
-    ui.output.innerHTML = kana.symbol + ' is ' + kana.info.romaji;
+    // Write the solution
+    $('#output').html(sensei.kana + ' is ' + sensei.romaji);
 
-    // Fade the output away after some time
-    clearTimeout(ui.output.timeout);
-    ui.output.classList.remove('hidden');
-    ui.output.timeout = setTimeout(function () {
-      ui.output.classList.add('hidden');
-    }, 3000);
+    // Clear the current animation and bring opacity to 1
+    $('#output').clearQueue().stop().fadeTo(0, 1);
+
+    // Set a fade out delay
+    $('#output').delay(5000).fadeTo(2000, 0);
 
     // Clear the input
-    ui.input.value = '';
-
-    // Update the counter
-    localStorage.total++;
-
-    // Update the UI
-    ui.update();
+    $('#input').val('');
 
     // Next kana!
-    kana.next();
+    sensei.next();
   }
 });
 
-ui.hiragana.on('click', function (e) {
-  if (JSON.parse(localStorage.hiragana) == true)
-    localStorage.hiragana = false;
+$('#system').click(function (e) {
+  // Toggle the writing system
+  if (lS.system == 'hiragana')
+    lS.system = 'katakana';
   else
-    localStorage.hiragana = true;
+    lS.system = 'hiragana';
 
   // Update the UI
-  ui.update();
+  $.update();
 
-  // Next kana!
-  kana.next();
+  // Update the subset
+  sensei.updateSubset();
+
+  // Pick a new kana
+  sensei.next();
 
   e.preventDefault();
 });
 
-ui.dakuten.on('click', function (e) {
-  if (JSON.parse(localStorage.dakuten) == true)
-    localStorage.dakuten = false;
+$('#modifiers').click(function (e) {
+  // Toggle the modifiers
+  if (lS.modifiers == 'none')
+    lS.modifiers = 'dakuten';
+  else if (lS.modifiers == 'dakuten')
+    lS.modifiers = 'youon';
   else
-    localStorage.dakuten = true;
+    lS.modifiers = 'none';
 
   // Update the UI
-  ui.update();
+  $.update();
 
-  // Next kana!
-  kana.next();
+  // Update the subset
+  sensei.updateSubset();
+
+  // Pick a new kana
+  sensei.next();
 
   e.preventDefault();
 });
 
-ui.youon.on('click', function (e) {
-  if (JSON.parse(localStorage.youon) == true)
-    localStorage.youon = false;
+$('#theme').click(function (e) {
+  // Toggle the theme
+  if (lS.theme == 'light')
+    lS.theme = 'dark';
   else
-    localStorage.youon = true;
+    lS.theme = 'light';
 
   // Update the UI
-  ui.update();
-
-  // Next kana!
-  kana.next();
+  $.update();
 
   e.preventDefault();
 });
 
-ui.score.on('click', function (e) {
-  localStorage.rights = 0;
-  localStorage.total  = 0;
+$('#wtf').click(function (e) {
+  if ($('#about').is(':hidden')) {
+    // Fade the about paragraph in
+    $('#about').fadeIn(800);
 
-  // Update the UI
-  ui.update();
-
-  e.preventDefault();
-});
-
-ui.wtf.on('click', function (e) {
-  // Hide or show the about paragraph
-  ui.about.classList.toggle('hidden');
-
-  e.preventDefault();
-});
-
-ui.day.on('click', function (e) {
-  if (JSON.parse(localStorage.day) == true)
-    localStorage.day = false;
-  else
-    localStorage.day = true;
-
-  // Update the UI
-  ui.update();
+    // Smooth scroll to it
+    $('body').animate({ scrollTop: $('#about').offset().top }, 800);
+  } else
+    $('#about').hide();
 
   e.preventDefault();
 });
@@ -243,28 +188,19 @@ ui.day.on('click', function (e) {
 // Initialization
 //
 
-// Fill local storage with default values
-localStorage.hiragana = localStorage.hiragana || true;
-localStorage.dakuten  = localStorage.dakuten  || false;
-localStorage.youon    = localStorage.youon    || false;
-localStorage.day      = localStorage.day      || true;
-localStorage.rights   = localStorage.rights   || 0;
-localStorage.total    = localStorage.total    || 0;
+$(function () {
+  // Update the UI
+  $.update();
 
-// Update the UI
-ui.update();
+  // Retreive the kana object from file
+  $.get('kana.json', function (data) {
+    // Store them
+    sensei.characters = data;
 
-// Retreive the kana object from file
-var req = new XMLHttpRequest();
-req.open('GET', 'kana.json', true);
-req.send(null);
+    // Update the subset
+    sensei.updateSubset();
 
-req.onreadystatechange = function () {
-  if (req.readyState == 4 && req.status == 200) {
-    // Load characters into the object
-    kana.characters = JSON.parse(req.responseText);
-
-    // Yeeha!
-    kana.next();
-  }
-};
+    // Pick the first kana
+    sensei.next();
+  }, 'json');
+});

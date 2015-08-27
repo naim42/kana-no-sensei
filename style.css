@@ -7,37 +7,30 @@ body {
 a {
   color: inherit;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 h1 {
-  margin-top: 0px;
-  margin-bottom: 40px;
+  margin: 0px;
   font-size: 8em;
 }
 
 #toolbar {
-  margin-bottom: 20px;
+  margin-top: 30px;
   font-size: 1.6em;
 }
 
 #toolbar a {
-  text-decoration: none;
+  text-decoration: inherit;
 }
 
-#symbol {
-  font-size: 18em;
+#kana {
   margin: 0px;
+  font-size: 20em;
 }
 
 #output {
+  height: 20px;
   font-weight: bold;
-  transition: opacity 0s;
-}
-
-#output.hidden {
-  opacity: 0;
-  transition: opacity 2s ease-out;
 }
 
 #output.success {
@@ -61,15 +54,8 @@ h1 {
 }
 
 #about {
-  margin-top: 20px;
-  overflow: hidden;
-  transition: opacity 0.4s;
+  margin-top: 60px;
   font-size: 1.2em;
-}
-
-#about.hidden {
-  height: 0px;
-  opacity: 0;
 }
 
 .left, .right {
