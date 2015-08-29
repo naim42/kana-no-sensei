@@ -1,23 +1,33 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>仮名の先生</title>
-    <link rel='icon' href='favicon.png'>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- The Icon -->
+    <link rel='icon' href='favicon.ico'>
+
+    <!-- The Stylesheets -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/fonts.css">
   </head>
   <body>
-    <a id="ribbon" href="https://github.com/naim42">
-      <img class="light" style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
-      <img class="dark" style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+    <!-- The GitHub ribbon -->
+    <a id="ribbon" href="https://github.com/naim42/kana-no-sensei">
+      <img class="light" style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+      <img class="dark" style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub">
     </a>
-    <h1 title="Kana no sensei">仮名の先生</h1>
+
+    <!-- The Title -->
+    <h1 id="title" title="Kana no sensei">仮名の先生</h1>
+
+    <!-- The Toolbar -->
     <p id="toolbar">
       <a id="system" href="#">
         <span class="hiragana" title="Hiragana">ひらがな</span>
         <span class="katakana" title="Katakana">カタカナ</span>
       </a>
-      •
+      <span class="bullet"></span>
       <a id="modifiers" href="#">
         <span class="hiragana none" title="Simple kanas">し</span>
         <span class="hiragana dakuten" title="Include dakuten">じ</span>
@@ -26,70 +36,81 @@
         <span class="katakana dakuten" title="Include dakuten">ジ</span>
         <span class="katakana youon" title="Include dakuten and youon">ジュ</span>
       </a>
-      •
+      <span class="bullet"></span>
       <a id="theme" href="#">
         <span class="light" title="Day">日</span>
         <span class="dark" title="Night">夜</span>
       </a>
-      •
+      <span class="bullet"></span>
       <a id="wtf" href="#" title="About">wtf !?</a>
     </p>
+
+    <!-- The Kana -->
     <p id="kana"></p>
+
+    <!-- The User input -->
     <p><input id="input" type="text" placeholder="Ex.: ka, n, ji" autofocus></p>
+
+    <!-- The Output message -->
     <p id="output"></p>
+
+    <!-- The About paragraph -->
     <div id="about" style="display: none;">
-      <p>
-        <strong>Hi there!</strong>
-      </p>
+      <p><strong>Hi there!</strong></p>
       <p>
         I'm a French teenager who likes to study the japanese language on his free time.<br>
-        I developed this tool to help me learn <strong>hiragana</strong> and <strong>katakana</strong> (the two main japanese alphabets).<br>
-        You can choose to train on hiragana or katakana, diacritics and digraphs.<br>
+        I developed this tool to help me learn <i>hiragana</i> and <i>katakana</i>, the two japanese syllabaries.<br>
+        You can train on either of them, with <i>dakuten</i> or not, and with the <i>youon</i> forms or not.<br>
         The source code for this project is available on <a href="https://github.com/naim42/kana-no-sensei">GitHub</a>.
       </p>
       <p class="translation">
         <span class="left">仮名の先生</span>
-        =
+        <span class="equals"></span>
         <span class="right">
-          <em>kana no sensei</em><br>
+          <i>kana no sensei</i><br>
           Kana Teacher
         </span>
       </p>
       <p class="translation">
         <span class="left">ひらがな</span>
-        =
+        <span class="equals"></span>
         <span class="right">
-          <em>hiragana</em><br>
+          <i>hiragana</i><br>
           hiragana
         </span>
       </p>
       <p class="translation">
         <span class="left">カタカナ</span>
-        =
+        <span class="equals"></span>
         <span class="right">
-          <em>katakana</em><br>
+          <i>katakana</i><br>
           katakana
         </span>
       </p>
       <p class="translation">
         <span class="left">日</span>
-        =
+        <span class="equals"></span>
         <span class="right">
-          <em>hi</em><br>
+          <i>hi</i><br>
           day
         </span>
       </p>
       <p class="translation">
         <span class="left">夜</span>
-        =
+        <span class="equals"></span>
         <span class="right">
-          <em>yoru</em><br>
+          <i>yoru</i><br>
           night
         </span>
       </p>
       <p>❤</p>
     </div>
+
+    <!-- The Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/sensei.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
