@@ -1,0 +1,88 @@
+body {
+  margin: 0px 0px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Raleway", "Noto Sans CJK JP", sans-serif;
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
+}
+
+.bullet::before {
+  content: "•";
+}
+
+.equals::before {
+  content: "=";
+}
+
+#title {
+  margin: 0px;
+  font-size: 8em;
+}
+
+#toolbar {
+  margin-top: 30px;
+  font-size: 1.6em;
+}
+
+#toolbar a {
+  text-decoration: inherit;
+}
+
+#kana {
+  margin: 0px;
+  font-size: 22em;
+  line-height: 1.2em;
+}
+
+#output {
+  height: 20px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#output.success {
+  color: #2D7;
+}
+
+#output.success::before {
+  margin-right: 5px;
+  content: "✔";
+  font-size: 1.2em;
+}
+
+#output.failure {
+  color: #E26;
+}
+
+#output.failure::before {
+  margin-right: 5px;
+  content: "✘";
+  font-size: 1.2em;
+}
+
+#about {
+  margin-top: 60px;
+  font-size: 1.2em;
+}
+
+.translation {
+  font-size: 0.8em;
+}
+
+.translation .left, .translation .right {
+  display: inline-block;
+  width: 200px;
+  vertical-align: middle;
+}
+
+.translation .left {
+  text-align: right;
+}
+
+.translation .right {
+  text-align: left;
+}
