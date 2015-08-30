@@ -2,7 +2,8 @@
 
 $.update = function () {
   // Hide everything
-  $('#system, #modifiers, #theme, #ribbon').children().hide();
+  $('#system, #modifiers, #theme').children().hide();
+  $('#gojuuon td').children().hide();
 
   // Show the writing system
   $('#system .' + lS.system).show();
@@ -10,15 +11,14 @@ $.update = function () {
   // Show the modifiers
   $('#modifiers .' + lS.system + '.' + lS.modifiers).show();
 
+  // Show the right characters in the gojuuon table
+  $('#gojuuon td .' + lS.system).show();
+
   // Show the theme kanji
   $('#theme .' + lS.theme).show();
 
-  // Show the right ribbon
-  $('#ribbon .' + lS.theme).show();
-
-  // Update the colors
-  $('body').css('background-color', lS.theme == 'light' ? 'white' : 'black');
-  $('body').css('color',            lS.theme == 'light' ? 'black' : 'white');
+  // Update the theme
+  $('body').attr('class', lS.theme);
 };
 
 // Events
@@ -43,7 +43,7 @@ $('#input').keyup(function (e) {
 
     // Set a fade out timeout
     $.outputFadeTimeout = setTimeout(function () {
-      $('#output').fadeTo(2000, 0);
+      $('#output').fadeTo(3000, 0);
     }, 5000);
 
     // Clear the input
@@ -92,6 +92,16 @@ $('#modifiers').click(function (e) {
 
   // Pick a new kana
   sensei.next();
+
+  e.preventDefault();
+});
+
+$('#showGojuuon').click(function (e) {
+  if ($('#gojuuon').is(':hidden')) {
+    $('#gojuuon').fadeIn(1000);
+  } else {
+    $('#gojuuon').hide();
+  }
 
   e.preventDefault();
 });
