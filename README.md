@@ -3,7 +3,7 @@ A tool for learning *hiragana* and *katakana*, the two japanese syllabaries.
 
 You can train on either of them, with *dakuten* or not, and with the *youon* forms or not.
 
-See this project live at http://naimfavier.me/kana-no-sensei !
+See this project [live](http://naim42.github.io/kana-no-sensei) !
 
 ## Screenshots
 
