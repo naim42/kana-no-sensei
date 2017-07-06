@@ -8,4 +8,4 @@ It supports both syllabaries, with an option to add modifiers (dakuten and handa
 
 ## License
 
-This project is licensed under the [**GNU General Public License**](https://github.com/naim42/kana-no-sensei/blob/master/LICENSE).
+This project is licensed under the [**GNU General Public License**](https://github.com/naim42/kana-no-sensei/blob/gh-pages/LICENSE).
