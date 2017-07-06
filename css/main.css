@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway.ttf"); }
+@font-face {
+  font-family: "Noto Sans CJK JP";
+  src: url("../fonts/NotoSansCJKjp.otf"); }
+body {
+  font: 1em "Raleway", "Noto Sans CJK JP", sans-serif;
+  text-align: center; }
+  body h1, body div, body table {
+    margin: 40px 0px; }
+  body a {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bold; }
+  body .bullet {
+    margin: 0 5px; }
+  body .bullet::before {
+    content: "•"; }
+  body #github img {
+    width: 28px;
+    height: 28px;
+    vertical-align: text-bottom; }
+
+body.light {
+  background: white;
+  color: black; }
+  body.light a:hover {
+    color: #666666; }
+  body.light #github .light {
+    display: none; }
+
+body.dark {
+  background: black;
+  color: white; }
+  body.dark a:hover {
+    color: #cccccc; }
+  body.dark #github .dark {
+    display: none; }
+
+#title {
+  font-size: 8em; }
+
+#toolbar {
+  font-size: 1.6em; }
+
+#gojuuon {
+  display: inline-block;
+  font-size: 2.2em; }
+  #gojuuon th, #gojuuon td {
+    width: 1.2em; }
+  #gojuuon th {
+    font-size: 0.6em;
+    font-style: italic; }
+  #gojuuon td {
+    font-weight: bold; }
+
+#kana {
+  font-size: 22em;
+  line-height: 1em; }
+
+#output {
+  font-size: 1.6em;
+  font-weight: bold; }
+
+#output.success {
+  color: #2D7; }
+  #output.success::before {
+    content: "✔ ";
+    font-size: 1.2em; }
+
+#output.failure {
+  color: #E26; }
+  #output.failure::before {
+    content: "✘ ";
+    font-size: 1.2em; }

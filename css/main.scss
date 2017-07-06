@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway.ttf");
+}
+
+@font-face {
+  font-family: "Noto Sans CJK JP";
+  src: url("../fonts/NotoSansCJKjp.otf");
+}
+
+$font-list: "Raleway", "Noto Sans CJK JP", sans-serif;
+
+$color-dark:  black;
+$color-light: white;
+$color-green: #2D7;
+$color-red:   #E26;
+
+$text-smaller:  0.6em;
+$text-small:    0.8em;
+$text-big:      1.2em;
+$text-bigger:   1.6em;
+$text-biggest:  2.2em;
+$text-huge:     8em;
+$text-enormous: 22em;
+
+body {
+  font: 1em $font-list;
+  text-align: center;
+
+  h1, div, table {
+    margin: 40px 0px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bold;
+  }
+
+  .bullet {
+      margin: 0 5px;
+  }
+
+  .bullet::before {
+    content: "•";
+  }
+
+  #github img {
+      width: 28px;
+      height: 28px;
+      vertical-align: text-bottom;
+  }
+}
+
+body.light {
+  background: $color-light;
+  color: $color-dark;
+
+  a:hover {
+    color: lighten($color-dark, 40%);
+  }
+
+  #github .light {
+    display: none;
+  }
+}
+
+body.dark {
+  background: $color-dark;
+  color: $color-light;
+
+  a:hover {
+    color: darken($color-light, 20%);
+  }
+
+  #github .dark {
+    display: none;
+  }
+}
+
+#title {
+  font-size: $text-huge;
+}
+
+#toolbar {
+  font-size: $text-bigger;
+}
+
+#gojuuon {
+  display: inline-block;
+  font-size: $text-biggest;
+
+  th, td {
+    width: 1.2em;
+  }
+
+  th {
+    font-size: $text-smaller;
+    font-style: italic;
+  }
+
+  td {
+    font-weight: bold;
+  }
+}
+
+#kana {
+  font-size: $text-enormous;
+  line-height: 1em;
+}
+
+#output {
+  font-size: $text-bigger;
+  font-weight: bold;
+}
+
+#output.success {
+  color: $color-green;
+
+  &::before {
+    content: "✔ ";
+    font-size: $text-big;
+  }
+}
+
+#output.failure {
+  color: $color-red;
+
+  &::before {
+    content: "✘ ";
+    font-size: $text-big;
+  }
+}

@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>仮名の先生</title>
 
     <!-- The Icon -->
-    <link rel='icon' href='favicon.ico'>
+    <link rel='icon' href='img/favicon.ico'>
 
     <!-- The Stylesheets -->
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <!-- The GitHub ribbon -->
-    <a id="ribbon" href="https://github.com/naim42/kana-no-sensei">
-      <img class="dark" style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
-      <img class="light" style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub">
-    </a>
-
     <!-- The Title -->
     <h1 id="title" title="Kana no sensei">仮名の先生</h1>
 
@@ -36,14 +30,17 @@
         <span class="katakana youon" title="Include dakuten and youon">ジュ</span>
       </a>
       <span class="bullet"></span>
-      <a id="showGojuuon" href="#" title="Show the table">五十音</a>
+      <a id="showGojuuon" href="#" title="Gojuuon table">五十音</a>
       <span class="bullet"></span>
       <a id="theme" href="#">
         <span class="light" title="Day">日</span>
         <span class="dark" title="Night">夜</span>
       </a>
       <span class="bullet"></span>
-      <a id="wtf" href="#" title="About">wtf !?</a>
+      <a id="github" href="https://github.com/naim42/kana-no-sensei">
+        <img class="dark" src="img/github-mark-dark.png" alt="GitHub">
+        <img class="light" src="img/github-mark-light.png" alt="GitHub">
+      </a>
     </div>
 
     <!-- The Gojuuon table -->
@@ -278,74 +275,15 @@
 
     <!-- The User input -->
     <div>
-      <input id="input" type="text" placeholder="Ex.: ka, n, ji" autofocus>
+      <input id="input" type="text" placeholder="Ex.: fu, chi, n">
     </div>
 
     <!-- The Output message -->
     <div id="output">&nbsp;</div>
 
-    <!-- The About paragraph -->
-    <div id="about" style="display: none;">
-      <p><strong>Hi there!</strong></p>
-      <p>
-        I'm a French teenager who likes to study the japanese language on his free time.<br>
-        I developed this tool to help me learn <i>hiragana</i> and <i>katakana</i>, the two japanese syllabaries.<br>
-        You can train on either of them, with <i>dakuten</i> or not, and with the <i>youon</i> forms or not.<br>
-        The source code for this project is available on <a href="https://github.com/naim42/kana-no-sensei">GitHub</a>.
-      </p>
-      <p class="translation">
-        <span class="left">仮名の先生</span>
-        <span class="equals"></span>
-        <span class="right">
-          <i>kana no sensei</i><br>
-          Kana Teacher
-        </span>
-      </p>
-      <p class="translation">
-        <span class="left">ひらがな</span>
-        <span class="equals"></span>
-        <span class="right">
-          <i>hiragana</i><br>
-          hiragana
-        </span>
-      </p>
-      <p class="translation">
-        <span class="left">カタカナ</span>
-        <span class="equals"></span>
-        <span class="right">
-          <i>katakana</i><br>
-          katakana
-        </span>
-      </p>
-      <p class="translation">
-        <span class="left">五十音</span>
-        <span class="equals"></span>
-        <span class="right">
-          <i>gojuuon</i><br>
-          Fifty Sounds
-        </span>
-      </p>
-      <p class="translation">
-        <span class="left">日</span>
-        <span class="equals"></span>
-        <span class="right">
-          <i>hi</i><br>
-          day
-        </span>
-      </p>
-      <p class="translation">
-        <span class="left">夜</span>
-        <span class="equals"></span>
-        <span class="right">
-          <i>yoru</i><br>
-          night
-        </span>
-      </p>
-      <p>❤</p>
-    </div>
-
     <!-- The Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kana.js"></script>
     <script src="js/storage.js"></script>
     <script src="js/sensei.js"></script>
     <script src="js/ui.js"></script>

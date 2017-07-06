@@ -1,0 +1,19 @@
+{
+  "name": "kana-no-sensei",
+  "version": "0.0.0",
+  "private": true,
+  "description": "An app for learning the japanese kana",
+  "scripts": {
+    "sass": "sass css/main.scss css/main.css --sourcemap=none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naim42/kana-no-sensei.git"
+  },
+  "author": "Naïm Favier",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/naim42/kana-no-sensei/issues"
+  },
+  "homepage": "https://github.com/naim42/kana-no-sensei#readme"
+}

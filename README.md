@@ -1,17 +1,10 @@
 # kana-no-sensei
-A tool for learning *hiragana* and *katakana*, the two japanese syllabaries.
 
-You can train on either of them, with *dakuten* or not, and with the *youon* forms or not.
+This is an app for learning hiragana and katakana, the two main japanese writing systems.
 
-See this project [live](http://naim42.github.io/kana-no-sensei) !
+It supports both syllabaries, with an option to add modifiers (dakuten and handakuten) and extended sounds (kana combinations).
 
-## Screenshots
-
-![Screenshot 1](http://i.imgur.com/GDYzUr2.png)
-
------------------------------------------------
-
-![Screenshot 2](http://i.imgur.com/b2xEAxf.png)
+[Try it!](http://naim42.github.io/kana-no-sensei)
 
 ## License
 

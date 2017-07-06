@@ -1,7 +1,4 @@
-// sensei.js
-
 var sensei = {
-  characters: {},
   subset: {},
   kana: '',
   romaji: '',
@@ -13,7 +10,7 @@ var sensei = {
     // Clear the subset
     this.subset = {};
 
-    $.each(this.characters, function (key, character) {
+    $.each(kana, function (key, character) {
       // If the writing system doesn't match
       if (character.system != lS.system) {
         return;

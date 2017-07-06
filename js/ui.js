@@ -1,5 +1,3 @@
-// ui.js
-
 $.update = function () {
   // Hide everything
   $('#system, #modifiers, #theme').children().hide();
@@ -44,7 +42,7 @@ $('#input').keyup(function (e) {
     // Set a fade out timeout
     $.outputFadeTimeout = setTimeout(function () {
       $('#output').fadeTo(3000, 0);
-    }, 5000);
+    }, 10000);
 
     // Clear the input
     $('#input').val('');
@@ -116,21 +114,6 @@ $('#theme').click(function (e) {
 
   // Update the UI
   $.update();
-
-  e.preventDefault();
-});
-
-$('#wtf').click(function (e) {
-  if ($('#about').is(':hidden')) {
-    // Fade the about paragraph in
-    $('#about').fadeIn(1000);
-
-    // Smooth scroll to it
-    $('html, body').animate({ scrollTop: $('#about').offset().top }, 1000);
-  } else {
-    // Hide the about paragraph
-    $('#about').hide();
-  }
 
   e.preventDefault();
 });
