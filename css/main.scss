@@ -1,19 +1,19 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: "Noto Sans JP";
-  font-weight: normal;
-  src: local('Noto Sans JP Regular'),
-       url("../fonts/NotoSansJP-Regular.otf");
-  unicode-range: U+0-7F, U+3000-9FFF, U+FF??, U+2700-27BF;
+    font-family: "Noto Sans JP";
+    font-weight: normal;
+    src: local('Noto Sans JP Regular'),
+         url("../fonts/NotoSansJP-Regular.otf");
+    unicode-range: U+0-7F, U+3040-30FF, U+4EEE, U+540D, U+5148, U+751F, U+4E94, U+5341, U+97F3, U+65E5, U+591C;
 }
 
 @font-face {
-  font-family: "Noto Sans JP";
-  font-weight: bold;
-  src: local('Noto Sans JP Bold'),
-       url("../fonts/NotoSansJP-Bold.otf");
-  unicode-range: U+0-7F, U+3000-9FFF, U+FF??, U+2700-27BF;
+    font-family: "Noto Sans JP";
+    font-weight: bold;
+    src: local('Noto Sans JP Bold'),
+         url("../fonts/NotoSansJP-Bold.otf");
+    unicode-range: U+0-7F, U+3040-30FF, U+4EEE, U+540D, U+5148, U+751F, U+4E94, U+5341, U+97F3, U+65E5, U+591C;
 }
 
 $font-list: "Noto Sans JP", sans-serif;
@@ -32,110 +32,111 @@ $text-huge:     8em;
 $text-enormous: 22em;
 
 body {
-  font: 1em $font-list;
-  text-align: center;
-
-  h1, div, table {
-    margin: 40px 0px;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: inherit;
-    font-weight: bold;
-  }
-
-  .bullet {
-      margin: 0 5px;
-  }
-
-  .bullet::before {
-    content: "•";
-  }
-
-  #github img {
-      width: 28px;
-      height: 28px;
-      vertical-align: text-bottom;
-  }
+    padding: 10px 0;
+    font: 1em $font-list;
+    text-align: center;
 }
 
 body.light {
-  background: $color-light;
-  color: $color-dark;
+    background: $color-light;
+    color: $color-dark;
 
-  a:hover {
-    color: lighten($color-dark, 40%);
-  }
+    a:hover {
+        color: lighten($color-dark, 40%);
+    }
 
-  #github .light {
-    display: none;
-  }
+    #github .light {
+        display: none;
+    }
 }
 
 body.dark {
-  background: $color-dark;
-  color: $color-light;
+    background: $color-dark;
+    color: $color-light;
 
-  a:hover {
-    color: darken($color-light, 20%);
-  }
+    a:hover {
+        color: darken($color-light, 20%);
+    }
 
-  #github .dark {
-    display: none;
-  }
+    #github .dark {
+        display: none;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bold;
+}
+
+h1, div, table {
+    margin: 30px 0;
 }
 
 #title {
-  font-size: $text-huge;
+    font-size: $text-huge;
 }
 
 #toolbar {
-  font-size: $text-bigger;
+    font-size: $text-bigger;
+
+    .bullet {
+        margin: 0 10px;
+    }
+
+    .bullet::before {
+        content: "⁕";
+    }
+
+    #github img {
+        width: 28px;
+        height: 28px;
+        vertical-align: text-bottom;
+    }
 }
 
 #gojuuon {
-  display: inline-block;
-  font-size: $text-biggest;
+    display: inline-block;
+    font-size: $text-biggest;
 
-  th, td {
-    width: 1.2em;
-  }
+    th, td {
+        width: 1.2em;
+    }
 
-  th {
-    font-size: $text-smaller;
-    font-style: italic;
-  }
+    th {
+        font-size: $text-smaller;
+    }
 
-  td {
-    font-weight: bold;
-  }
+    td {
+        font-weight: bold;
+    }
 }
 
 #kana {
-  font-size: $text-enormous;
-  line-height: 1em;
+    line-height: 1em;
+    overflow: hidden;
+    font-size: $text-enormous;
 }
 
 #output {
-  font-size: $text-bigger;
-  font-weight: bold;
+    font-size: $text-bigger;
+    font-weight: bold;
 }
 
 #output.success {
-  color: $color-green;
+    color: $color-green;
 
-  &::before {
-    content: "✔ ";
-    font-size: $text-big;
-  }
+    &::before {
+        content: "✔ ";
+        font-size: $text-big;
+    }
 }
 
 #output.failure {
-  color: $color-red;
+    color: $color-red;
 
-  &::before {
-    content: "✘ ";
-    font-size: $text-big;
-  }
+    &::before {
+        content: "✘ ";
+        font-size: $text-big;
+    }
 }

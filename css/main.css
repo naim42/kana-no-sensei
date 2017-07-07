@@ -3,29 +3,16 @@
   font-family: "Noto Sans JP";
   font-weight: normal;
   src: local("Noto Sans JP Regular"), url("../fonts/NotoSansJP-Regular.otf");
-  unicode-range: U+0-7F, U+3000-9FFF, U+FF??, U+2700-27BF; }
+  unicode-range: U+0-7F, U+3040-30FF, U+4EEE, U+540D, U+5148, U+751F, U+4E94, U+5341, U+97F3, U+65E5, U+591C; }
 @font-face {
   font-family: "Noto Sans JP";
   font-weight: bold;
   src: local("Noto Sans JP Bold"), url("../fonts/NotoSansJP-Bold.otf");
-  unicode-range: U+0-7F, U+3000-9FFF, U+FF??, U+2700-27BF; }
+  unicode-range: U+0-7F, U+3040-30FF, U+4EEE, U+540D, U+5148, U+751F, U+4E94, U+5341, U+97F3, U+65E5, U+591C; }
 body {
+  padding: 10px 0;
   font: 1em "Noto Sans JP", sans-serif;
   text-align: center; }
-  body h1, body div, body table {
-    margin: 40px 0px; }
-  body a {
-    color: inherit;
-    text-decoration: inherit;
-    font-weight: bold; }
-  body .bullet {
-    margin: 0 5px; }
-  body .bullet::before {
-    content: "•"; }
-  body #github img {
-    width: 28px;
-    height: 28px;
-    vertical-align: text-bottom; }
 
 body.light {
   background: white;
@@ -43,11 +30,27 @@ body.dark {
   body.dark #github .dark {
     display: none; }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: bold; }
+
+h1, div, table {
+  margin: 30px 0; }
+
 #title {
   font-size: 8em; }
 
 #toolbar {
   font-size: 1.6em; }
+  #toolbar .bullet {
+    margin: 0 10px; }
+  #toolbar .bullet::before {
+    content: "⁕"; }
+  #toolbar #github img {
+    width: 28px;
+    height: 28px;
+    vertical-align: text-bottom; }
 
 #gojuuon {
   display: inline-block;
@@ -55,14 +58,14 @@ body.dark {
   #gojuuon th, #gojuuon td {
     width: 1.2em; }
   #gojuuon th {
-    font-size: 0.6em;
-    font-style: italic; }
+    font-size: 0.6em; }
   #gojuuon td {
     font-weight: bold; }
 
 #kana {
-  font-size: 22em;
-  line-height: 1em; }
+  line-height: 1em;
+  overflow: hidden;
+  font-size: 22em; }
 
 #output {
   font-size: 1.6em;
