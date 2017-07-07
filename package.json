@@ -4,7 +4,8 @@
   "private": true,
   "description": "An app for learning the japanese kana",
   "scripts": {
-    "sass": "sass css/main.scss css/main.css --sourcemap=none"
+    "sass": "sass css/main.scss css/main.css --sourcemap=none",
+    "sass-watch": "sass --watch css/main.scss:css/main.css --sourcemap=none"
   },
   "repository": {
     "type": "git",

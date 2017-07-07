@@ -1,16 +1,22 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway.ttf");
+  font-family: "Noto Sans JP";
+  font-weight: normal;
+  src: local('Noto Sans JP Regular'),
+       url("../fonts/NotoSansJP-Regular.otf");
+  unicode-range: U+0-7F, U+3000-9FFF, U+FF??, U+2700-27BF;
 }
 
 @font-face {
-  font-family: "Noto Sans CJK JP";
-  src: url("../fonts/NotoSansCJKjp.otf");
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  src: local('Noto Sans JP Bold'),
+       url("../fonts/NotoSansJP-Bold.otf");
+  unicode-range: U+0-7F, U+3000-9FFF, U+FF??, U+2700-27BF;
 }
 
-$font-list: "Raleway", "Noto Sans CJK JP", sans-serif;
+$font-list: "Noto Sans JP", sans-serif;
 
 $color-dark:  black;
 $color-light: white;
