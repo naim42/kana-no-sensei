@@ -1,292 +1,292 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>仮名の先生</title>
+    <head>
+        <meta charset="utf-8">
+        <title>仮名の先生</title>
 
-    <!-- The Icon -->
-    <link rel='icon' href='img/favicon.ico'>
+        <!-- The Icon -->
+        <link rel='icon' href='img/favicon.ico'>
 
-    <!-- The Stylesheets -->
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <!-- The Title -->
-    <h1 id="title" title="Kana no sensei">仮名の先生</h1>
+        <!-- The Stylesheets -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- The Title -->
+        <h1 id="title" title="Kana no sensei">仮名の先生</h1>
 
-    <!-- The Toolbar -->
-    <div id="toolbar">
-      <a id="system" href="#">
-        <span class="hiragana" title="Hiragana">ひらがな</span>
-        <span class="katakana" title="Katakana">カタカナ</span>
-      </a>
-      <span class="bullet"></span>
-      <a id="modifiers" href="#">
-        <span class="hiragana none" title="Simple kanas">し</span>
-        <span class="hiragana dakuten" title="Include dakuten">じ</span>
-        <span class="hiragana youon" title="Include dakuten and youon">じゅ</span>
-        <span class="katakana none" title="Simple kanas">シ</span>
-        <span class="katakana dakuten" title="Include dakuten">ジ</span>
-        <span class="katakana youon" title="Include dakuten and youon">ジュ</span>
-      </a>
-      <span class="bullet"></span>
-      <a id="showGojuuon" href="#" title="Gojuuon table">五十音</a>
-      <span class="bullet"></span>
-      <a id="theme" href="#">
-        <span class="light" title="Day">日</span>
-        <span class="dark" title="Night">夜</span>
-      </a>
-      <span class="bullet"></span>
-      <a id="github" href="https://github.com/naim42/kana-no-sensei">
-        <img class="dark" src="img/github-mark-dark.png" alt="GitHub">
-        <img class="light" src="img/github-mark-light.png" alt="GitHub">
-      </a>
-    </div>
+        <!-- The Toolbar -->
+        <div id="toolbar">
+            <a id="system" href="#">
+                <span class="hiragana" title="Hiragana">ひらがな</span>
+                <span class="katakana" title="Katakana">カタカナ</span>
+            </a>
+            <span class="bullet"></span>
+            <a id="modifiers" href="#">
+                <span class="hiragana none" title="Simple kanas">し</span>
+                <span class="hiragana dakuten" title="Include dakuten">じ</span>
+                <span class="hiragana youon" title="Include dakuten and youon">じゅ</span>
+                <span class="katakana none" title="Simple kanas">シ</span>
+                <span class="katakana dakuten" title="Include dakuten">ジ</span>
+                <span class="katakana youon" title="Include dakuten and youon">ジュ</span>
+            </a>
+            <span class="bullet"></span>
+            <a id="showGojuuon" href="#" title="Gojuuon table">五十音</a>
+            <span class="bullet"></span>
+            <a id="theme" href="#">
+                <span class="light" title="Day">日</span>
+                <span class="dark" title="Night">夜</span>
+            </a>
+            <span class="bullet"></span>
+            <a id="github" href="https://github.com/naim42/kana-no-sensei">
+                <img class="dark" src="img/github-mark-dark.png" alt="GitHub">
+                <img class="light" src="img/github-mark-light.png" alt="GitHub">
+            </a>
+        </div>
 
-    <!-- The Gojuuon table -->
-    <table id="gojuuon" style="display: none;">
-      <tr>
-        <th>-n</th>
-        <th>w</th>
-        <th>r</th>
-        <th>y</th>
-        <th>m</th>
-        <th>h</th>
-        <th>n</th>
-        <th>t</th>
-        <th>s</th>
-        <th>k</th>
-        <th>-</th>
-      </tr>
-      <tr>
-        <td rowspan="5" style="vertical-align: middle;">
-          <span class="hiragana n" title="n">ん</span>
-          <span class="katakana n" title="n">ン</span>
-        </td>
-        <td>
-          <span class="hiragana wa" title="wa">わ</span>
-          <span class="katakana wa" title="wa">ワ</span>
-        </td>
-        <td>
-          <span class="hiragana ra" title="ra">ら</span>
-          <span class="katakana ra" title="ra">ラ</span>
-        </td>
-        <td>
-          <span class="hiragana ya" title="ya">や</span>
-          <span class="katakana ya" title="ya">ヤ</span>
-        </td>
-        <td>
-          <span class="hiragana ma" title="ma">ま</span>
-          <span class="katakana ma" title="ma">マ</span>
-        </td>
-        <td>
-          <span class="hiragana ha" title="ha">は</span>
-          <span class="katakana ha" title="ha">ハ</span>
-        </td>
-        <td>
-          <span class="hiragana na" title="na">な</span>
-          <span class="katakana na" title="na">ナ</span>
-        </td>
-        <td>
-          <span class="hiragana ta" title="ta">た</span>
-          <span class="katakana ta" title="ta">タ</span>
-        </td>
-        <td>
-          <span class="hiragana sa" title="sa">さ</span>
-          <span class="katakana sa" title="sa">サ</span>
-        </td>
-        <td>
-          <span class="hiragana ka" title="ka">か</span>
-          <span class="katakana ka" title="ka">カ</span>
-        </td>
-        <td>
-          <span class="hiragana a" title="a">あ</span>
-          <span class="katakana a" title="a">ア</span>
-        </td>
-        <th>a</th>
-      </tr>
-      <tr>
-        <td>
-          <span class="hiragana wi" title="wi">ゐ</span>
-          <span class="katakana wi" title="wi">ヰ</span>
-        </td>
-        <td>
-          <span class="hiragana ri" title="ri">り</span>
-          <span class="katakana ri" title="ri">リ</span>
-        </td>
-        <td></td>
-        <td>
-          <span class="hiragana mi" title="mi">み</span>
-          <span class="katakana mi" title="mi">ミ</span>
-        </td>
-        <td>
-          <span class="hiragana hi" title="hi">ひ</span>
-          <span class="katakana hi" title="hi">ヒ</span>
-        </td>
-        <td>
-          <span class="hiragana ni" title="ni">に</span>
-          <span class="katakana ni" title="ni">ニ</span>
-        </td>
-        <td>
-          <span class="hiragana chi" title="chi">ち</span>
-          <span class="katakana chi" title="chi">チ</span>
-        </td>
-        <td>
-          <span class="hiragana shi" title="shi">し</span>
-          <span class="katakana shi" title="shi">シ</span>
-        </td>
-        <td>
-          <span class="hiragana ki" title="ki">き</span>
-          <span class="katakana ki" title="ki">キ</span>
-        </td>
-        <td>
-          <span class="hiragana i" title="i">い</span>
-          <span class="katakana i" title="i">イ</span>
-        </td>
-        <th>i</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td>
-          <span class="hiragana ru" title="ru">る</span>
-          <span class="katakana ru" title="ru">ル</span>
-        </td>
-        <td>
-          <span class="hiragana yu" title="yu">ゆ</span>
-          <span class="katakana yu" title="yu">ユ</span>
-        </td>
-        <td>
-          <span class="hiragana mu" title="mu">む</span>
-          <span class="katakana mu" title="mu">ム</span>
-        </td>
-        <td>
-          <span class="hiragana fu" title="fu">ふ</span>
-          <span class="katakana fu" title="fu">フ</span>
-        </td>
-        <td>
-          <span class="hiragana nu" title="nu">ぬ</span>
-          <span class="katakana nu" title="nu">ヌ</span>
-        </td>
-        <td>
-          <span class="hiragana tsu" title="tsu">つ</span>
-          <span class="katakana tsu" title="tsu">ツ</span>
-        </td>
-        <td>
-          <span class="hiragana su" title="su">す</span>
-          <span class="katakana su" title="su">ス</span>
-        </td>
-        <td>
-          <span class="hiragana ku" title="ku">く</span>
-          <span class="katakana ku" title="ku">ク</span>
-        </td>
-        <td>
-          <span class="hiragana u" title="u">う</span>
-          <span class="katakana u" title="u">ウ</span>
-        </td>
-        <th>u</th>
-      </tr>
-      <tr>
-        <td>
-          <span class="hiragana we" title="we">ゑ</span>
-          <span class="katakana we" title="we">ヱ</span>
-        </td>
-        <td>
-          <span class="hiragana re" title="re">れ</span>
-          <span class="katakana re" title="re">レ</span>
-        </td>
-        <td></td>
-        <td>
-          <span class="hiragana me" title="me">め</span>
-          <span class="katakana me" title="me">メ</span>
-        </td>
-        <td>
-          <span class="hiragana he" title="he">へ</span>
-          <span class="katakana he" title="he">ヘ</span>
-        </td>
-        <td>
-          <span class="hiragana ne" title="ne">ね</span>
-          <span class="katakana ne" title="ne">ネ</span>
-        </td>
-        <td>
-          <span class="hiragana te" title="te">て</span>
-          <span class="katakana te" title="te">テ</span>
-        </td>
-        <td>
-          <span class="hiragana se" title="se">せ</span>
-          <span class="katakana se" title="se">セ</span>
-        </td>
-        <td>
-          <span class="hiragana ke" title="ke">け</span>
-          <span class="katakana ke" title="ke">ケ</span>
-        </td>
-        <td>
-          <span class="hiragana e" title="e">え</span>
-          <span class="katakana e" title="e">エ</span>
-        </td>
-        <th>e</th>
-      </tr>
-      <tr>
-        <td>
-          <span class="hiragana wo" title="wo">を</span>
-          <span class="katakana wo" title="wo">ヲ</span>
-        </td>
-        <td>
-          <span class="hiragana ro" title="ro">ろ</span>
-          <span class="katakana ro" title="ro">ロ</span>
-        </td>
-        <td>
-          <span class="hiragana yo" title="yo">よ</span>
-          <span class="katakana yo" title="yo">ヨ</span>
-        </td>
-        <td>
-          <span class="hiragana mo" title="mo">も</span>
-          <span class="katakana mo" title="mo">モ</span>
-        </td>
-        <td>
-          <span class="hiragana ho" title="ho">ほ</span>
-          <span class="katakana ho" title="ho">ホ</span>
-        </td>
-        <td>
-          <span class="hiragana no" title="no">の</span>
-          <span class="katakana no" title="no">ノ</span>
-        </td>
-        <td>
-          <span class="hiragana to" title="to">と</span>
-          <span class="katakana to" title="to">ト</span>
-        </td>
-        <td>
-          <span class="hiragana so" title="so">そ</span>
-          <span class="katakana so" title="so">ソ</span>
-        </td>
-        <td>
-          <span class="hiragana ko" title="ko">こ</span>
-          <span class="katakana ko" title="ko">コ</span>
-        </td>
-        <td>
-          <span class="hiragana o" title="o">お</span>
-          <span class="katakana o" title="o">オ</span>
-        </td>
-        <th>o</th>
-      </tr>
-    </table>
+        <!-- The Gojuuon table -->
+        <table id="gojuuon" style="display: none;">
+            <tr>
+                <th>-n</th>
+                <th>w</th>
+                <th>r</th>
+                <th>y</th>
+                <th>m</th>
+                <th>h</th>
+                <th>n</th>
+                <th>t</th>
+                <th>s</th>
+                <th>k</th>
+                <th>-</th>
+            </tr>
+            <tr>
+                <td rowspan="5" style="vertical-align: middle;">
+                    <span class="hiragana n" title="n">ん</span>
+                    <span class="katakana n" title="n">ン</span>
+                </td>
+                <td>
+                    <span class="hiragana wa" title="wa">わ</span>
+                    <span class="katakana wa" title="wa">ワ</span>
+                </td>
+                <td>
+                    <span class="hiragana ra" title="ra">ら</span>
+                    <span class="katakana ra" title="ra">ラ</span>
+                </td>
+                <td>
+                    <span class="hiragana ya" title="ya">や</span>
+                    <span class="katakana ya" title="ya">ヤ</span>
+                </td>
+                <td>
+                    <span class="hiragana ma" title="ma">ま</span>
+                    <span class="katakana ma" title="ma">マ</span>
+                </td>
+                <td>
+                    <span class="hiragana ha" title="ha">は</span>
+                    <span class="katakana ha" title="ha">ハ</span>
+                </td>
+                <td>
+                    <span class="hiragana na" title="na">な</span>
+                    <span class="katakana na" title="na">ナ</span>
+                </td>
+                <td>
+                    <span class="hiragana ta" title="ta">た</span>
+                    <span class="katakana ta" title="ta">タ</span>
+                </td>
+                <td>
+                    <span class="hiragana sa" title="sa">さ</span>
+                    <span class="katakana sa" title="sa">サ</span>
+                </td>
+                <td>
+                    <span class="hiragana ka" title="ka">か</span>
+                    <span class="katakana ka" title="ka">カ</span>
+                </td>
+                <td>
+                    <span class="hiragana a" title="a">あ</span>
+                    <span class="katakana a" title="a">ア</span>
+                </td>
+                <th>a</th>
+            </tr>
+            <tr>
+                <td>
+                    <span class="hiragana wi" title="wi">ゐ</span>
+                    <span class="katakana wi" title="wi">ヰ</span>
+                </td>
+                <td>
+                    <span class="hiragana ri" title="ri">り</span>
+                    <span class="katakana ri" title="ri">リ</span>
+                </td>
+                <td></td>
+                <td>
+                    <span class="hiragana mi" title="mi">み</span>
+                    <span class="katakana mi" title="mi">ミ</span>
+                </td>
+                <td>
+                    <span class="hiragana hi" title="hi">ひ</span>
+                    <span class="katakana hi" title="hi">ヒ</span>
+                </td>
+                <td>
+                    <span class="hiragana ni" title="ni">に</span>
+                    <span class="katakana ni" title="ni">ニ</span>
+                </td>
+                <td>
+                    <span class="hiragana chi" title="chi">ち</span>
+                    <span class="katakana chi" title="chi">チ</span>
+                </td>
+                <td>
+                    <span class="hiragana shi" title="shi">し</span>
+                    <span class="katakana shi" title="shi">シ</span>
+                </td>
+                <td>
+                    <span class="hiragana ki" title="ki">き</span>
+                    <span class="katakana ki" title="ki">キ</span>
+                </td>
+                <td>
+                    <span class="hiragana i" title="i">い</span>
+                    <span class="katakana i" title="i">イ</span>
+                </td>
+                <th>i</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span class="hiragana ru" title="ru">る</span>
+                    <span class="katakana ru" title="ru">ル</span>
+                </td>
+                <td>
+                    <span class="hiragana yu" title="yu">ゆ</span>
+                    <span class="katakana yu" title="yu">ユ</span>
+                </td>
+                <td>
+                    <span class="hiragana mu" title="mu">む</span>
+                    <span class="katakana mu" title="mu">ム</span>
+                </td>
+                <td>
+                    <span class="hiragana fu" title="fu">ふ</span>
+                    <span class="katakana fu" title="fu">フ</span>
+                </td>
+                <td>
+                    <span class="hiragana nu" title="nu">ぬ</span>
+                    <span class="katakana nu" title="nu">ヌ</span>
+                </td>
+                <td>
+                    <span class="hiragana tsu" title="tsu">つ</span>
+                    <span class="katakana tsu" title="tsu">ツ</span>
+                </td>
+                <td>
+                    <span class="hiragana su" title="su">す</span>
+                    <span class="katakana su" title="su">ス</span>
+                </td>
+                <td>
+                    <span class="hiragana ku" title="ku">く</span>
+                    <span class="katakana ku" title="ku">ク</span>
+                </td>
+                <td>
+                    <span class="hiragana u" title="u">う</span>
+                    <span class="katakana u" title="u">ウ</span>
+                </td>
+                <th>u</th>
+            </tr>
+            <tr>
+                <td>
+                    <span class="hiragana we" title="we">ゑ</span>
+                    <span class="katakana we" title="we">ヱ</span>
+                </td>
+                <td>
+                    <span class="hiragana re" title="re">れ</span>
+                    <span class="katakana re" title="re">レ</span>
+                </td>
+                <td></td>
+                <td>
+                    <span class="hiragana me" title="me">め</span>
+                    <span class="katakana me" title="me">メ</span>
+                </td>
+                <td>
+                    <span class="hiragana he" title="he">へ</span>
+                    <span class="katakana he" title="he">ヘ</span>
+                </td>
+                <td>
+                    <span class="hiragana ne" title="ne">ね</span>
+                    <span class="katakana ne" title="ne">ネ</span>
+                </td>
+                <td>
+                    <span class="hiragana te" title="te">て</span>
+                    <span class="katakana te" title="te">テ</span>
+                </td>
+                <td>
+                    <span class="hiragana se" title="se">せ</span>
+                    <span class="katakana se" title="se">セ</span>
+                </td>
+                <td>
+                    <span class="hiragana ke" title="ke">け</span>
+                    <span class="katakana ke" title="ke">ケ</span>
+                </td>
+                <td>
+                    <span class="hiragana e" title="e">え</span>
+                    <span class="katakana e" title="e">エ</span>
+                </td>
+                <th>e</th>
+            </tr>
+            <tr>
+                <td>
+                    <span class="hiragana wo" title="wo">を</span>
+                    <span class="katakana wo" title="wo">ヲ</span>
+                </td>
+                <td>
+                    <span class="hiragana ro" title="ro">ろ</span>
+                    <span class="katakana ro" title="ro">ロ</span>
+                </td>
+                <td>
+                    <span class="hiragana yo" title="yo">よ</span>
+                    <span class="katakana yo" title="yo">ヨ</span>
+                </td>
+                <td>
+                    <span class="hiragana mo" title="mo">も</span>
+                    <span class="katakana mo" title="mo">モ</span>
+                </td>
+                <td>
+                    <span class="hiragana ho" title="ho">ほ</span>
+                    <span class="katakana ho" title="ho">ホ</span>
+                </td>
+                <td>
+                    <span class="hiragana no" title="no">の</span>
+                    <span class="katakana no" title="no">ノ</span>
+                </td>
+                <td>
+                    <span class="hiragana to" title="to">と</span>
+                    <span class="katakana to" title="to">ト</span>
+                </td>
+                <td>
+                    <span class="hiragana so" title="so">そ</span>
+                    <span class="katakana so" title="so">ソ</span>
+                </td>
+                <td>
+                    <span class="hiragana ko" title="ko">こ</span>
+                    <span class="katakana ko" title="ko">コ</span>
+                </td>
+                <td>
+                    <span class="hiragana o" title="o">お</span>
+                    <span class="katakana o" title="o">オ</span>
+                </td>
+                <th>o</th>
+            </tr>
+        </table>
 
-    <!-- The Kana -->
-    <div id="kana"></div>
+        <!-- The Kana -->
+        <div id="kana"></div>
 
-    <!-- The User input -->
-    <div>
-      <input id="input" type="text" placeholder="Ex.: fu, chi, n">
-    </div>
+        <!-- The User input -->
+        <div>
+            <input id="input" type="text" placeholder="Ex.: fu, chi, n">
+        </div>
 
-    <!-- The Output message -->
-    <div id="output"></div>
+        <!-- The Output message -->
+        <div id="output"></div>
 
-    <!-- The Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/kana.js"></script>
-    <script src="js/storage.js"></script>
-    <script src="js/sensei.js"></script>
-    <script src="js/ui.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+        <!-- The Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/kana.js"></script>
+        <script src="js/storage.js"></script>
+        <script src="js/sensei.js"></script>
+        <script src="js/ui.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

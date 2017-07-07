@@ -1,10 +1,4 @@
-$(function () {
-  // Update the UI
-  $.update();
+$.update();
 
-  // Update the subset
-  sensei.updateSubset();
-
-  // Pick the first kana
-  sensei.next();
-});
+sensei.update();
+sensei.next();

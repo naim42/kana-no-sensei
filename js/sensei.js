@@ -1,51 +1,37 @@
 var sensei = {
-  subset: {},
-  kana: '',
-  romaji: '',
-  lastKanas: [],
-  updateSubset: function () {
-    // Scope.
-    var that = this;
+    usedKanas: {},
+    currentKana: '',
+    romaji: '',
+    lastKanas: [],
+    update: function () {
+        this.usedKanas = {};
 
-    // Clear the subset
-    this.subset = {};
+        var that = this;
+        $.each(kana, function (key, character) {
+            if (character.system != lS.system)
+                return;
 
-    $.each(kana, function (key, character) {
-      // If the writing system doesn't match
-      if (character.system != lS.system) {
-        return;
-      }
+            var modifiers = ['none', 'dakuten', 'youon'];
+            if (modifiers.indexOf(character.modifiers) > modifiers.indexOf(lS.modifiers))
+                return;
 
-      // Unwanted modifier
-      var order = ['none', 'dakuten', 'youon'];
-      if (order.indexOf(character.modifiers) > order.indexOf(lS.modifiers)) {
-        return;
-      }
+            that.usedKanas[key] = character;
+        });
+    },
+    next: function () {
+        var kanas = Object.keys(this.usedKanas);
 
-      // Add to subset
-      that.subset[key] = character;
-    });
-  },
-  next: function () {
-    // Retrieve all kanas
-    var kanas = Object.keys(this.subset);
+        do {
+            this.currentKana = kanas[Math.floor(Math.random() * kanas.length)];
+        } while (this.lastKanas.indexOf(this.currentKana) != -1);
 
-    do {
-      this.kana = kanas[Math.floor(Math.random() * kanas.length)]; // Pick a random kana
-    } while (this.lastKanas.indexOf(this.kana) != -1); // That hasn't been used recently
+        this.romaji = this.usedKanas[this.currentKana].romaji;
 
-    // Store the kana's romaji
-    this.romaji = this.subset[this.kana].romaji;
+        this.lastKanas.push(this.currentKana);
 
-    // Store in the last used list
-    this.lastKanas.push(this.kana);
+        if (this.lastKanas.length > 15)
+            this.lastKanas.shift();
 
-    // Cap the last used list
-    if (this.lastKanas.length > 15) {
-      this.lastKanas.shift();
+        $('#kana').html(this.currentKana);
     }
-
-    // Display the kana
-    $('#kana').html(this.kana);
-  }
 };
